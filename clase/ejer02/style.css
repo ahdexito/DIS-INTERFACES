@@ -1,19 +1,29 @@
-/* { margin: 0px; padding: 0px; }*/
+* { margin: 0px; padding: 0px; }
 
 /* Fondo de la web con imagen */
 body {
     background-image: url(img/fondo.jpg);
+    display: flex;
+    justify-content: center;
 }
 
 /* Rectángulo de color */
 div {
     background-color: burlywood;
+    width: 500px;
+    margin-top: 30px;
 }
 
 /* Títulos */
 h1, h2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    margin: 15px;
+    font-size: 30px;
+}
+
+h2 {
+    margin: 30px;
 }
 
 /* Elemento "Est. 2020" */
@@ -25,24 +35,28 @@ header p {
 
 table {
     font-family: Arial, Helvetica, sans-serif;
-    display: inline;
+    width: 100%;
 }
 
-td :nth-child(1) {
+tr td:nth-child(1) {
     text-align: left;
-    color: red;
 }
 
-td :nth-child(2) {
+tr td:nth-child(2) {
     text-align: right;
-    color: blue;
+}
+
+td {
+    padding: 5px 15px;
 }
 
 hr {
     background-color: brown;
+    border: 0px;
+    margin: 20px;
+    height: 3px;
 }
 
-img {
+section {
     text-align: center;
-    display: block;
 }
