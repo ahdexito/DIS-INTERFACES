@@ -1,0 +1,49 @@
+/* Selector de Atributo: ¿Cómo seleccionarías todos los enlaces (<a>) que tienen la clase nav-linky están dentro de un elemento <nav> con la clase main-nav? */
+
+nav.main-nav a.nav-link {
+    color: red;
+}
+
+/* Selector de Pseudo-clase: ¿Cómo aplicarías un estilo diferente al enlace que tiene la clase active dentro de la lista de navegación? */
+
+nav.main-nav a.active {
+    background-color: rgb(255, 132, 0);
+    color: white;
+}
+
+/* Selector de Descendencia : ¿Cómo seleccionarías todos los elementos <p>que
+están dentro de un <article>con la clase article-item? */
+
+article.article-item p {
+    color: rgb(0, 110, 255);
+}
+
+/* Selector de Hijo Directo : ¿Cómo seleccionarías solo los elementos <li>que son hijos directos de un <ul>dentro del footer? */
+
+footer ul > li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Selector de Hermano Adyacente : ¿Cómo seleccionarías el primer <article>que sigue inmediatamente a un <h2>con la clase section-title?
+*/
+
+h2.section-title + article {
+    color:rgb(157, 0, 255);
+}
+
+/* Selector de Pseudo-elemento : ¿Cómo agregarías un símbolo de flecha ( →)
+después de cada enlace con la clase read-more? */
+
+a.read-more:after {
+    content: " → ";
+}
+
+/* Selector de Atributo con Valor Específico : ¿Cómo seleccionarías todos los
+elementos <a>que tienen un atributo href que comienza con #? */
+
+/* no aplica al encabezado? */
+a[href*="#"] {
+    color: yellowgreen;
+}
+
+/*

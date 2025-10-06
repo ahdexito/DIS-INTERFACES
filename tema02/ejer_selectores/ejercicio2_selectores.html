@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores 2</title>
+</head>
+<body>
+    <header id="main-header" class="header">
+        <h1 class="title">Título de la Página</h1>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>Bienvenido a nuestra página</h2>
+            <p class="description">Este es un ejemplo de una página compleja para practicar selectores CSS.</p>
+            <button class="cta-button">¡Haz clic aquí!</button>
+        </div>
+    </section>
+
+    <main>
+        <article id="post-1" class="blog-post">
+            <h3>Artículo 1</h3>
+            <p class="post-content">Este es el contenido del primer artículo.</p>
+            <a href="#read-more" class="read-more">Leer más</a>
+        </article>
+
+        <article id="post-2" class="blog-post featured">
+            <h3>Artículo 2</h3>
+            <p class="post-content">Este es el contenido del segundo artículo.</p>
+            <a href="#read-more" class="read-more">Leer más</a>
+        </article>
+
+        <article id="post-3" class="blog-post">
+            <h3>Artículo 3</h3>
+            <p class="post-content">Este es el contenido del tercer artículo.</p>
+            <a href="#read-more" class="read-more">Leer más</a>
+        </article>
+    </main>
+
+    <aside class="sidebar">
+        <h4>Categorías</h4>
+        <ul class="categories">
+            <li><a href="#category-1">Categoría 1</a></li>
+            <li><a href="#category-2">Categoría 2</a></li>
+            <li><a href="#category-3">Categoría 3</a></li>
+        </ul>
+    </aside>
+
+    <footer id="main-footer" class="footer">
+        <p>&copy; 2023 Todos los derechos reservados.</p>
+    </footer>
+
+    <form id="contact-form" class="form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit" class="submit-button">Enviar</button>
+    </form>
+</body>
+</html>
