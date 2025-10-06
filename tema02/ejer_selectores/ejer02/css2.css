@@ -1,0 +1,31 @@
+/* 1. ¿Cómo seleccionarías el primer <article>dentro del <main>que tenga la clase blogpost, pero solo si no tiene la clase featured? */
+
+article:not(.featured):first-child {
+    background-color: rgb(212, 159, 159);
+}
+
+/* 2. ¿Qué selector usarías para aplicar estilos únicamente al último elemento <li>dentro de la lista de categorías ( <ul class="categories">) que esté dentro del <aside>? */
+
+aside ul.categories li:last-child {
+    background-color: rgb(171, 220, 220);
+}
+
+/* 3. ¿Cómo seleccionarías todos los elementos <p>que sean hijos directos de un <article>con la clase blog-post, pero solo si ese <article>es el tercer hijo de su contenedor padre? */
+
+article.blog-post:nth-of-type(3) > p {
+    background-color: rgb(210, 194, 224);
+}
+
+/* 4. ¿Qué selector usarías para aplicar estilos al botón de envío ( <button class="submitbutton">) solo cuando el formulario ( <form>) tenga el atributo id igual a "contactform"y el botón esté siendo presionado (pseudo-clase :active)? */
+
+#contact-form .submit-button:active {
+    background-color: rgb(231, 201, 113);
+    font-weight: bolder;
+}
+
+/* 5. ¿Cómo seleccionarías el primer carácter de cada párrafo ( <p>) dentro del <main>para aplicarle un estilo especial (por ejemplo, cambiar su color o tamaño)? */
+
+main p::first-letter {
+    color: crimson;
+    font-size:x-large;
+}

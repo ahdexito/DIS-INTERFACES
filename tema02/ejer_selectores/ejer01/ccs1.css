@@ -1,7 +1,7 @@
 /* Selector de Atributo: ¿Cómo seleccionarías todos los enlaces (<a>) que tienen la clase nav-linky están dentro de un elemento <nav> con la clase main-nav? */
 
 nav.main-nav a.nav-link {
-    color: red;
+    color: rgb(230, 117, 196);
 }
 
 /* Selector de Pseudo-clase: ¿Cómo aplicarías un estilo diferente al enlace que tiene la clase active dentro de la lista de navegación? */
@@ -46,4 +46,23 @@ a[href*="#"] {
     color: yellowgreen;
 }
 
-/*
+/* Selector de Negación : ¿Cómo seleccionarías todos los
+elementos <article>que no tienen la clase featured? */
+
+article:not(.featured) {
+    font-weight: bold;
+}
+
+/* Selector de Pseudo-clase de Posición : ¿Cómo seleccionarías el
+tercer <article>dentro de la sección de artículos? */
+
+section article:nth-of-type(3) {
+    color: rgb(255, 0, 64);
+}
+
+/* Selector de Atributo que Contiene una Palabra : ¿Cómo seleccionarías todos
+los elementos <h4>que tienen una clase que contiene la palabra title? */
+
+h4[class*="title"] {
+    font-style: italic;
+}
