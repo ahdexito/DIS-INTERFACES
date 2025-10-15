@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS header */
+
+header {
+    background-image: url(img/img1.jpg);
+    color: whitesmoke;
+    height: 150px;
+    padding-top: 15px;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+header button {
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(27, 92, 136);
+    border: 1px solid white;
+    padding: 7px;
+}
+
+header a button {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* CSS nav */
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul {
+    text-align: left;
+    background-color: rgb(27, 92, 136);
+    height: 30px;
+    padding-top: 15px;
+
+}
+
+nav ul li a {
+    padding: 5px;
+    margin: 20px;
+    color:rgb(248, 167, 44);
+    text-decoration: none;
+}
+
+/* CSS main */
+
+section img {
+    width: 150px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+
+
+/* CSS footer */
+
+footer {
+    background-color: rgb(27, 92, 136);
+    display: flex;
+}
+
+footer section {
+    width: 300px;
+}
+
+#footer-siguenos h2 {
+    color:rgb(248, 167, 44);
+    text-align: left;
+}
+
+#footer-siguenos ul li {
+    list-style: none;
+    text-align: left;
+}
+
+#footer-siguenos ul li a {
+    text-decoration: none;
+    color:rgb(248, 167, 44);
+}
