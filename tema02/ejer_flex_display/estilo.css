@@ -59,7 +59,7 @@ nav ul li a {
 /* CSS main */
 
 section img {
-    width: 150px;
+    width: 400px;
 }
 
 main {
@@ -67,33 +67,103 @@ main {
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    height: 300px;
 }
 
-
+main h2 {
+    text-align: left;
+}
 
 /* CSS footer */
 
 footer {
     background-color: rgb(27, 92, 136);
     display: flex;
+    justify-content: space-between;
 }
 
 footer section {
     width: 300px;
+    margin: 30px;
 }
+
+/* Footer políticas */
+
+#footer-politicas h2 {
+    color:rgb(248, 167, 44);
+    text-align: left;
+}
+
+#footer-politicas ul li {
+    list-style: none;
+    text-align: left;
+}
+
+#footer-politicas ul li a {
+    text-decoration: none;
+    color:rgb(248, 167, 44);
+}
+
+#footer-politicas hr {
+    border-color: rgb(248, 167, 44);
+    width: 200px;
+}
+
+/* Footer síguenos */
 
 #footer-siguenos h2 {
     color:rgb(248, 167, 44);
     text-align: left;
 }
 
-#footer-siguenos ul li {
-    list-style: none;
+#footer-siguenos img {
+    width: 70px;
+    margin: 20px;
+}
+
+#footer-siguenos figure {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-siguenos hr {
+    border-color: rgb(248, 167, 44);
+    width: 250px;
+}
+
+/* Footer contactamos */
+
+#footer-contactamos h2 {
+    color:rgb(248, 167, 44);
     text-align: left;
 }
 
-#footer-siguenos ul li a {
-    text-decoration: none;
+#footer-contactamos label {
     color:rgb(248, 167, 44);
+}
+
+#footer-contactamos input {
+    text-align: left;
+}
+
+#footer-contactamos form {
+    text-align: left;
+}
+
+#footer-contactamos div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#footer-contactamos button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+#footer-contactamos hr {
+    border-color: rgb(248, 167, 44);
+    width: 300px;
 }
