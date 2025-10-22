@@ -4,47 +4,60 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 /* BODY */
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(64, 177, 171);
+    background-color: #755840;
 }
 
+
 /* HEADER */
+
 header {
     width: 1000px;
-    height: 180px;
-    background-color: aquamarine;
-    align-items: center;
+    height: 250px;
+    background-color: #e5ab75;
     justify-content: center;
-    margin-top: 50px;
-    border-radius: 30px;
+    margin-top: 20px;
+    border-radius: 100px;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 3rem;
-    color: rgb(30, 102, 78);
+    font-size: 6rem;
+    color: #755840;
+    margin-top: 10px;
 }
 
+header h2 {
+    font-size: 3rem;
+    margin: 30px;
+    margin-bottom: 70px;
+    color: #423a31;
+}
+
+
 /* NAV */
+
 nav {
-    background-color: rgb(99, 207, 171);
+    background-color: rgb(157, 212, 194);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    padding: 20px;
+    height: 60px;
+    padding: 25px;
     margin-top: 30px;
-    border-radius: 20px;
+    border-radius: 55px;
 }
 
 nav ul {
     display: flex;
-    gap: 50px;
+    gap: 60px;
 }
 
 nav ul li {
@@ -53,30 +66,40 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(196, 243, 227);
+    color: #FFFFFF;
     font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav button:hover {
+    background-color: rgb(10, 88, 62);
 }
 
 nav button {
     background-color: rgb(62, 129, 107);
     width: 150px;
-    height: 50px;
-    border-radius: 20px;
+    height: 80px;
+    border-radius: 50px;
     border: none;
+}
+
+.boton-activo {
+    background-color: rgb(25, 56, 46);
 }
 
 
 /* MAIN */
+
 main h2 {
-    color: rgb(196, 243, 227);
-    margin-top: 50px;
+    color: #FFFFFF;
+    margin-top: 70px;
     margin-bottom: 10px;
     margin-left: 50px;
     font-size: 2rem;
 }
 
 main section {
-    background-color: rgb(196, 243, 227);
+    background-color: rgb(157, 212, 194);
     border-radius: 50px;
     padding: 20px;
 }
@@ -87,13 +110,13 @@ main article {
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
-    background-color:rgb(157, 212, 194) ;
+    background-color: rgb(67, 100, 118);
 }
 
 main p {
     font-size: 1.7rem;
+    color: #FFFFFF;
 }
-
 
 
 /* FOOTER */
@@ -101,11 +124,12 @@ main p {
 footer {
     width: 1000px;
     height: 70px;
-    background-color: aquamarine;
+    background-color: rgb(157, 212, 194);
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    border-radius: 30px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    border-radius: 55px;
     padding: 20px;
     text-align: center;
 }
@@ -114,13 +138,13 @@ footer button {
     background-color: rgb(62, 129, 107);
     width: 200px;
     height: 70px;
-    border-radius: 20px;
+    border-radius: 50px;
     border: none;
 }
 
 footer a {
     text-decoration: none;
-    color: rgb(196, 243, 227);
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 1.8rem;
 }
