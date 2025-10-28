@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 1000;
+}
+
+
+/* BODY */
+
+body {
+    background-color: aliceblue
+}
+
+
+/* HEADER */
+
+header {
+    background-color: rgb(34, 59, 80);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+}
+
+header nav ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* MAIN */
+
+main section {
+    background-color: white;
+    border: rgb(228, 228, 228) solid 1px;
+    margin: 30px;
+    padding: 30px;
+    border-radius:5px;
+    box-shadow: rgba(238, 232, 232, 0.466) 2px 2px 5px;
+}
+
+#seccion-principal {
+    width: 100%;
+}
+
+#seccion-principal h2 {
+    color:rgb(34, 59, 80);
+}
+
+
+/* ASIDE */
+
+aside {
+    background-color: rgb(228, 236, 227);
+    margin: 30px;
+}
+
+aside section h2 {
+    color: rgb(5, 126, 240);
+}
+
+aside hr {
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(34, 59, 80);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+}
