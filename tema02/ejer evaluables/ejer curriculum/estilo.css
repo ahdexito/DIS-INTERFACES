@@ -11,7 +11,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #755840;
+    /*background-color: #755840;*/
+    background-image: url("img/textura-de-papel.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -20,7 +23,7 @@ body {
 header {
     width: 1000px;
     height: 300px;
-    background-color: #e5ab75;
+    background-color: #e5ab7594;
     margin-top: 20px;
     border-radius: 100px;
     padding: 20px;
@@ -31,7 +34,7 @@ header {
 
 header h1 {
     font-size: 4rem;
-    color: #755840;
+    color: #f3e5d9;
 }
 
 header h2 {
@@ -54,7 +57,7 @@ header img {
 /* NAV */
 
 nav {
-    background-color: rgb(157, 212, 194);
+    background-color: rgba(157, 212, 194, 0.521);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +112,7 @@ main h2 {
 }
 
 main section {
-    background-color: rgb(157, 212, 194);
+    background-color: rgba(157, 212, 194, 0.521);
     border-radius: 50px;
     padding: 20px;
 }
@@ -143,7 +146,7 @@ main ul li {
 footer {
     width: 1000px;
     height: 70px;
-    background-color: rgb(157, 212, 194);
+    background-color: rgba(157, 212, 194, 0.521);
     align-items: center;
     justify-content: center;
     margin-top: 90px;
