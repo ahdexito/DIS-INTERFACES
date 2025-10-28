@@ -7,59 +7,54 @@
     <title>Mi Blog de Tecnología</title>
 </head>
 <body>
-    <header>
+    <header class="cabecera">
         <h1>Mi Blog de Tecnología</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Categorías</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Contacto</a>
         </nav>
     </header>
+    <main class="contenido">
+        <section class="principal">
+            <article class="destacado">
+                <h2>El futuro de CSS: Flexbox vs. Grid</h2>
+                <p>Publicado el 19 de Octubre de 2025</p>
+                <p>Una inmersión profunda en las herramientas de maquetación que están revolucionando el diseño web...</p>
+                <a href="#">Leer más</a>
+            </article>
 
+            <section class="entradas">
+                <h3>Últimas entradas</h3>
 
-    <main>
-        <section id="seccion-principal">
-            <h2>El futuro de CSS: Flexbox vs. Grid</h2>
-            <p>Publicado el 19 de Octubre de 2025</p>
-            <p>Una inmersión profunda en las herramientas de maquetación que están revolucionando el diseño web</p>
+                <article class="entrada">
+                    <h2>Diseño Responsive con solo 10 líneas</h2>
+                    <p>Trucos y consejos para optimizar tu código</p>
+                </article>
+
+                <article class="entrada">
+                    <h2>Nuevas APIs de JavaScript</h2>
+                    <p>Las últimas novedades que debes conocer en ES2025</p>
+                </article>
+            </section>
         </section>
-
-        <h2>Últimas entradas</h2>
-
-        <section>
-            <h2>Nuevas APIs de JavaScript</h2>
-            <p>Las últimas novedades que debes conocer en ES2025</p>
-        </section>
-
-        <section>
-            <h2>Diseño Responsive con solo 10 líneas</h2>
-            <p>Trucos y consejos para optimizar tu código</p>
-        </section>
-    </main>
-
-    <aside>
-        <section>
-            <h2>Categorías</h2>
+        <aside class="lateral">
+            <h3>Categorías</h3>
             <ul>
                 <li><a href="#">Web (25)</a></li>
                 <li><a href="#">Móvil (12)</a></li>
                 <li><a href="#">DevOps (8)</a></li>
             </ul>
-        </section>
-        <hr>
-        
-        <section>
-            <h2>Síguenos</h2>
-            <p>Encuentra más contenido en nuestras <a href="#">redes sociales</a></p>
-        </section>
-        <hr>
-    </aside>
 
-    <footer>
-        <p>&copy 2025 Mi Blog Flexible. Todos los derechos reservados.</p>
-    </footer>
+            <hr>
+            
+            <h3>Síguenos</h3>
+            <p>Encuentra más contenido en nuestras <a href="#">redes sociales.</a></p>
+            
+            <hr>
+        </aside>
+    </main>
+    <footer class="pie">&copy 2025 Mi Blog Flexible. Todos los derechos reservados.</footer>
 </body>
 </html>
