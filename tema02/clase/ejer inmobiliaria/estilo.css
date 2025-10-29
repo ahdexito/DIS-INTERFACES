@@ -4,6 +4,7 @@
     text-align: center;
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,6 +13,7 @@ body {
 
 header {
     background-image: url(img/img1.jpg);
+    background-size: cover;
     color: whitesmoke;
     height: 150px;
     padding-top: 15px;
@@ -67,7 +69,8 @@ main {
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 main h2 {
@@ -166,4 +169,37 @@ footer section {
 #footer-contactamos hr {
     border-color: rgb(248, 167, 44);
     width: 300px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+        gap: 10px;
+    }
+
+    header {
+        background-image: url(img/img1.jpg);
+        background-size: cover;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
