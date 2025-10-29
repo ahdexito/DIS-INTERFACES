@@ -53,6 +53,10 @@ body {
     gap: 30px;
 }
 
+.destacado h2 {
+    color: #2c3e50;
+}
+
 .principal {
     width: 1200px;
     float: left;
@@ -110,7 +114,7 @@ body {
 
 .lateral ul li a {
     text-decoration: none;
-    color: #2f3e4d;
+    color: #2c3e50;
 }
 
 
