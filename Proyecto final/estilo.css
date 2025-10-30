@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: #805646;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    background-color: #d48439;
+
+    width: 300px;
+    height: 100px;
+}
+
+header button {
+    background-color: #d48439;
+    
+    width: 150px;
+    height: 100px;
+}
