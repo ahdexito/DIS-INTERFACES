@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS header */
+
+header {
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    height: 150px;
+    padding-top: 15px;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+header button {
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(27, 92, 136);
+    border: 1px solid white;
+    padding: 7px;
+}
+
+header a button {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* CSS nav */
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul {
+    text-align: left;
+    background-color: rgb(27, 92, 136);
+    height: 30px;
+    padding-top: 15px;
+
+}
+
+nav ul li a {
+    padding: 5px;
+    margin: 20px;
+    color:rgb(248, 167, 44);
+    text-decoration: none;
+}
+
+/* CSS main */
+
+section img {
+    width: 400px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    text-align: left;
+}
+
+/* CSS footer */
+
+footer {
+    background-color: rgb(27, 92, 136);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section {
+    width: 300px;
+    margin: 30px;
+}
+
+/* Footer políticas */
+
+#footer-politicas h2 {
+    color:rgb(248, 167, 44);
+    text-align: left;
+}
+
+#footer-politicas ul li {
+    list-style: none;
+    text-align: left;
+}
+
+#footer-politicas ul li a {
+    text-decoration: none;
+    color:rgb(248, 167, 44);
+}
+
+#footer-politicas hr {
+    border-color: rgb(248, 167, 44);
+    width: 200px;
+}
+
+/* Footer síguenos */
+
+#footer-siguenos h2 {
+    color:rgb(248, 167, 44);
+    text-align: left;
+}
+
+#footer-siguenos img {
+    width: 70px;
+    margin: 20px;
+}
+
+#footer-siguenos figure {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-siguenos hr {
+    border-color: rgb(248, 167, 44);
+    width: 250px;
+}
+
+/* Footer contactamos */
+
+#footer-contactamos h2 {
+    color:rgb(248, 167, 44);
+    text-align: left;
+}
+
+#footer-contactamos label {
+    color:rgb(248, 167, 44);
+}
+
+#footer-contactamos input {
+    text-align: left;
+}
+
+#footer-contactamos form {
+    text-align: left;
+}
+
+#footer-contactamos div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#footer-contactamos button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+#footer-contactamos hr {
+    border-color: rgb(248, 167, 44);
+    width: 300px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+        gap: 10px;
+    }
+
+    header {
+        background-image: url(img/img1.jpg);
+        background-size: cover;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
