@@ -3,27 +3,141 @@
     padding: 0px;
 }
 
+/* -------------------------------------------------- */
+/* HEADER */
 
 header {
     background-color: #805646;
 
-    padding: 20px;
+    height: 200px;
+
+    display: flex;
+}
+
+/* logotipo */
+.logotipo {
+    width: 33.33%;
+    padding-left: 50px;
+
+    align-self: center;
+}
+
+.logotipo img {
+    width: 500px;
+}
+
+/* botón reservar */
+.reservar {
+    width: 33.33%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.reservar button {
+    background-color: #b97e46;
+    color: #fff;
+
+    font-size: 2.5em;
+    font-weight: bold;
+
+    width: 300px;
+    height: 150px;
+
+    border: 0px;
+    border-radius: 0px 0px 100px 100px;
+}
+
+/* menú de enlaces */
+.nav {
+    color: #fff;
+
+    width: 33.33%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    padding-right: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav a {
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.nav hr {
+    border: 1px #fff solid;
+}
+
+.nav .contacto {
+    display: flex;
+    gap: 50px;
+}
+
+/* -------------------------------------------------- */
+/* BODY */
+
+body {
+    background-color: #eeb581;
+}
+
+/* -------------------------------------------------- */
+/* MAIN */
+
+main {
+    background-color: #eeb581;
+
+    padding: 50px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+main img {
+    width: 1200px;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER */
+
+footer {
+    background-color: #805646;
+
+    padding: 50px;
+
+    display: flex;
     justify-content: space-between;
 }
 
-header img {
-    background-color: #d48439;
-
-    width: 300px;
-    height: 100px;
+.mapa {
+    display: flex;
+    flex-direction: column;
 }
 
-header button {
-    background-color: #d48439;
-    
-    width: 150px;
-    height: 100px;
+footer img {
+    width: 600px;
+}
+
+table {
+    height: 200px;
+
+    border: 2px #fff solid;
+}
+
+table td {
+    background-color: #eeb581;
+
+    padding: 20px;
 }
