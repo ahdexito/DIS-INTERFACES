@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial;
+}
+
+
+/* formato móvil */
+
+/* -------------------------------------------------- */
+/* HEADER */
+
+header {
+    background-color: #f9f9f9;
+
+    padding-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+
+    margin-top: 10px;
+
+    display: flex;
+    gap: 20px;
+}
+
+header button {
+    padding: 10px;
+
+    border: 0;
+    background-color: #00000000;
+
+    border-radius: 3px;
+}
+
+header button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+/* -------------------------------------------------- */
+/* MAIN */
+
+.comenzar {
+    background-color: #e6e6e6;
+
+    height: 300px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+}
+
+.formulario {
+    background-color: #f9f9f9;
+    color: #3b3b3b;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario form {
+    background-color: #fff;
+
+    width: 400px;
+    padding: 30px;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    text-align: left;
+}
+
+.formulario input {
+    padding: 10px;
+
+    border: #000 solid 2px;
+    border-radius: 3px;
+}
+
+main button {
+    background-color: #000;
+    color: #fff;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 3px;
+}
+
+main button:hover {
+    background-color: #00000000;
+    color: #000;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50;
+    text-align: center;
+}
+
+footer h1 {
+    margin: 30px;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* formato escritorio */
+
+@media (min-width: 800px) {  
+
+    /* -------------------------------------------------- */
+    /* HEADER */
+
+    header {
+        height: 60px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* float left */
+    header h1 {
+        float: left;
+    }
+
+    /* float right */
+    header nav {
+        float: right;
+    }
+
+    /* -------------------------------------------------- */
+    /* MAIN */
+
+    .comenzar {
+        height: 200px;
+    }
+
+    /* -------------------------------------------------- */
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    footer h1 {
+        margin-bottom: 20px;
+    }
+}
