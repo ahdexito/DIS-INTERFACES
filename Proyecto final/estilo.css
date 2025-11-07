@@ -9,7 +9,7 @@
 header {
     background-color: #805646;
 
-    height: 200px;
+    height: 140px;
 
     display: flex;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 .logotipo img {
-    width: 500px;
+    width: 300px;
 }
 
 /* botón reservar */
@@ -38,14 +38,18 @@ header {
     background-color: #b97e46;
     color: #fff;
 
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 
     width: 300px;
-    height: 150px;
+    height: 100px;
+
+    padding-bottom: 10px;
 
     border: 0px;
     border-radius: 0px 0px 100px 100px;
+
+    text-align: center;
 }
 
 /* menú de enlaces */
@@ -95,18 +99,19 @@ body {
 /* -------------------------------------------------- */
 /* MAIN */
 
-main {
+main section {
     background-color: #eeb581;
 
     padding: 50px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 80px;
 }
 
 main img {
-    width: 1200px;
+    width: 1000px;
 }
 
 /* -------------------------------------------------- */
@@ -118,26 +123,54 @@ footer {
     padding: 50px;
 
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
 }
+
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .mapa {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    gap: 20px;
 }
 
-footer img {
-    width: 600px;
+.mapa img {
+    width: 400px;
 }
 
-table {
-    height: 200px;
-
-    border: 2px #fff solid;
+.mapa a {
+    color: #fff;
 }
 
-table td {
-    background-color: #eeb581;
+
+.horario {
+    width: 800px;
+}
+
+.horario td {
+    background-color: #bd8975;
+    color: #fff;
+
+    border: 0;
 
     padding: 20px;
+
+    text-align: center;
+}
+
+
+.politicas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.politicas a {
+    color: #fff;
 }
