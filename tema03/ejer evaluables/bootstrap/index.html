@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ejer bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img class="mx-2" src="imgs/logo.png" alt="logotipo bicicleta" width="30" />
+					BY BIKE!!</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Bicicletas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Accesorios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Componentes</a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Productos
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+								<li><a class="dropdown-item" href="#">Sillines</a></li>
+								<li><a class="dropdown-item" href="#">Cascos</a></li>
+								<li><a class="dropdown-item" href="#">Tijas</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Sobre nosotros...
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+								<li><a class="dropdown-item" href="#">About</a></li>
+								<li><a class="dropdown-item" href="#">Contact</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-outline-success" type="submit">
+							Buscar
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="row d-flex g-5 p-3">
+			<div class="col-sm-4">
+				<div class="card mb-3">
+					<img src="imgs/orbea.jpg" class="card-img-top" alt="bicicleta orbea" />
+					<div class="card-body">
+						<h5 class="card-title">Bicicletas</h5>
+						<p class="card-text">
+							Accede a nuestra sección de Bicicletas donde 
+                            podrás encontrar las mejores de esta temporada.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-3">
+					<img src="imgs/accesorios.jpg" class="card-img-top" alt="bicicleta orbea" />
+					<div class="card-body">
+						<h5 class="card-title">Accesorios</h5>
+						<p class="card-text">
+							Accede a nuestra sección de accesorios donde 
+                            encontrarás todos los accesorios que necesites al mejor precio.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card mb-3">
+					<img src="imgs/componentes.jpg" class="card-img-top" alt="bicicleta orbea" />
+					<div class="card-body">
+						<h5 class="card-title">Componentes</h5>
+						<p class="card-text">
+							Accede a nuestra sección de componentes.
+						</p>
+						<p class="card-text">
+							<small class="text-muted">Last updated 3 mins ago</small>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="p-3">
+        <div class="alert alert-light">
+            <div>&copy; Ángel García Smakula</div>
+        </div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
