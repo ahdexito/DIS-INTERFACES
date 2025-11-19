@@ -1,0 +1,168 @@
+/* CONFIGURACIÓN GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+    font-family: Verdana;
+    font-size: 15px;
+}
+
+h1 {
+    /* los títulos son un poco más grandes */
+    font-size: larger;
+}
+
+
+/* CONFIGURACIÓN PANTALLAS PEQUEÑAS */
+
+/* HEADER */
+header {
+    background-color: #ece0cf;
+    padding: 10px;
+}
+
+header img {
+    width: 80px;
+}
+
+
+/* NAV */
+nav {
+    background-color: #1a0c01;
+}
+
+nav ul {
+    /* flex para repartir el espacio de los enlaces fácilmente con space-around */
+    display: flex;
+    justify-content: space-around;
+
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f2c14e;
+}
+
+
+/* MAIN */
+main {
+    /* flex para centrarlo fácilmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    height: 300px;
+
+    background-image: url(imagenes/imagen-central.jpg);
+    background-position: center;
+}
+
+main img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+main p {
+    margin-top: 10px;
+    padding: 0 50px;
+}
+
+
+/* COPY */
+.copy {
+    background-color: #f57c00;
+    padding: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #ece0cf;
+    padding: 20px;
+}
+
+footer section {
+    margin-bottom: 30px;
+}
+
+footer h1 {
+    color: #f57c00;
+}
+
+footer a {
+    /* display block para poder separarlo del 'p' de arriba */
+    display: block;
+
+    color: #f57c00;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+
+footer form {
+    /* flex vertical para darle gap */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 50px;
+}
+
+footer form input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    /* el placeholder empieza al principio */
+    text-align: start;
+}
+
+#mensaje {
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    text-align: start;
+    padding: 10px;
+}
+
+form button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f57c00;
+    color: #fff;
+}
+
+
+
+/* CONFIGURACIÓN PANTALLAS GRANDES */
+@media (min-width: 650px) {
+    footer {
+        /* flex para cambiar a disposición horizontal */
+        display: flex;
+        justify-content: space-around;
+        gap: 100px;
+
+        padding: 30px 100px;
+        padding-top: 100px;
+    }
+    
+    footer section {
+        /* cada elemento 33% para repartir el espacio equitativamente */
+        width: 33%;
+    }
+
+    footer form {
+        width: 33%;
+        margin-top: 0;
+    }
+}
