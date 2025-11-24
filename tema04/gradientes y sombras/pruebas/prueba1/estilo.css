@@ -1,0 +1,35 @@
+* {
+    padding: 5px;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: 
+        linear-gradient(
+            90deg,
+            #232994 0%,
+            #0f4d83 20%,
+            #0a86ac 40%,
+            #0be8f0 60%,
+            #12ef97 80%,
+            #109155 100%);
+}
+
+.segundo {
+    background: 
+        radial-gradient(
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, .4) 25%,
+            rgba(255, 255, 255, .5) 50%,
+            rgba(255, 255, 255, 0) 100%),
+        linear-gradient(
+            45deg,
+            #0b1284 0%, 
+            #83096e 20%,
+            #840b2a 40%,
+            #b13e12 60%,
+            #e27412 80%,
+            #e21212 100%);
+}

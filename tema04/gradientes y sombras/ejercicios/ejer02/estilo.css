@@ -1,0 +1,14 @@
+* {
+    font-family: Arial;
+    padding: 10px;
+}
+
+div {
+    border: 1px solid gray;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+
+    background: linear-gradient(to bottom, #3498db 25%, #1f587d 100%);
+    color: #fff;
+}
