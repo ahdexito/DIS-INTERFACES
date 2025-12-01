@@ -1,0 +1,46 @@
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicios {
+    border-top: solid 5px rgb(255, 219, 12);
+    transition: background-color 0.5s ease;
+}
+#servicios:hover {background-color: rgb(255, 219, 12);}
+
+#proyectos {
+    border-top: solid 5px rgb(61, 197, 65);
+    transition: background-color 0.5s ease;
+}
+#proyectos:hover {background-color: rgb(61, 197, 65);}
+
+#recursos {
+    border-top: solid 5px rgb(206, 37, 37);
+    transition: background-color 0.5s ease;
+}
+#recursos:hover {background-color: rgb(206, 37, 37);}
+
+#contacto {
+    border-top: solid 5px rgb(171, 73, 201);
+    transition: background-color 0.5s ease;
+}
+#contacto:hover {background-color: rgb(171, 73, 201);}

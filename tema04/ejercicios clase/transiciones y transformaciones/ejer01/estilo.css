@@ -1,0 +1,86 @@
+div {
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: aquamarine;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-color: brown;
+    transition: 1s ease;
+}
+.background:hover {background-color: burlywood;}
+
+
+.font-size {
+    background-color: blueviolet;
+    transition: 1s ease;
+}
+.font-size:hover {font-size: 1.5em;}
+
+
+.color {
+    background-color: darkcyan;
+    transition: 1s ease;
+}
+.color:hover {color: greenyellow;}
+
+
+.line-heigth {
+    background-color: cornflowerblue;
+    line-height: 1.2em;
+    transition: 1s ease;
+}
+.line-heigth:hover {line-height: 5em;}
+
+
+.border-radius {
+    background-color: mediumseagreen;
+    transition: 1s ease;
+}
+.border-radius:hover {border-radius: 50px;}
+
+
+.box-shadow {
+    background-color: gold;
+    transition: 1s ease;
+}
+.box-shadow:hover {box-shadow: 0px 0px 30px 10px #e2a843;}
+
+
+.opacity {
+    background-color: orange;
+    transition: 1s ease;
+}
+.opacity:hover {opacity: 50%;}
+
+
+.border {
+    background-color: darkgrey;
+    transition: 1s ease;
+}
+.border:hover {border: 5px solid black;}
+
+
+.margin {
+    background-color: slategrey;
+    transition: 1s ease;
+}
+.margin:hover {margin: 30px;}
+
+
+.padding {
+    background-color: black;
+    transition: 1s ease;
+}
+.padding:hover {padding: 30px;}
