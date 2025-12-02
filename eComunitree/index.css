@@ -17,25 +17,45 @@ body {
     padding: 30px 10%;
 }
 
-main {
-    background-color: #fcfaf0;
+header {
+    background-color: #f5b97f;
 
-    padding: 40px 15%;
     border-radius: 20px;
+    padding: 10px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+    margin-bottom: 20px;
 }
 
 h1 {
-    background-color: #f5b97f;
-
     text-align: center;
     font-size: 5vw;
-    
-    padding: 10px;
-    border-radius: 7px;
+}
+
+img {
+    width: 6.5vw;
+}
+
+main {
+    background-color: #fcfaf0;
+
+    padding: 3% 5%;
+    border-radius: 20px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5vw;
 }
 
 h3 {
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -50,10 +70,6 @@ article p {
     color: #fcfaf0;
 
     text-align: center;
-}
-
-article {
-    width: 50%;
 }
 
 #check {
@@ -74,10 +90,13 @@ input {
     border: #4a5342 solid 3px;
     border-radius: 10px;
     
-    height: 50px;
-    padding: 10px 20px;
+    height: 3vw;
+    width: 95%;
+    padding: 10px 2%;
 
     font-size: 1.5vw;
+
+    display: block;
 }
 
 button {
@@ -92,7 +111,7 @@ button {
     border-radius: 10px;
     border: 0;
 
-    font-size: 1.5vw;
+    font-size: 2.5vw;
 }
 
 a {
@@ -100,20 +119,24 @@ a {
 }
 
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+#registrarse {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 
+    margin-top: 40px;
+}
 
 
 
 
 @media (min-width: 1200px) {
-
-    .contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 40px;
-    }
 
     section {
         display: flex;
@@ -121,6 +144,8 @@ a {
     }
 
     article {
+        width: 50%;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -129,7 +154,7 @@ a {
     article p {
         flex-basis: 50%;
 
-        font-size: 2.6em;
+        font-size: 2.3vw;
     }
 
     #registrarse button {
@@ -137,8 +162,6 @@ a {
     }
 
     form {
-        display: flex;
-        flex-direction: column;
         gap: 40px;
     }
 
@@ -147,6 +170,4 @@ a {
         align-items: center;
         gap: 20px;
     }
-
-
 }
