@@ -78,7 +78,7 @@ header #burger {
 
 /* SECCIÓN MAIN */
 main {
-    background-color: #312536;
+    background-color: #b887d5;
 
     box-shadow: #310744 0px 10px 20px 5px;
 }
@@ -108,10 +108,10 @@ main .botones {
 }
 
 main .botones button {
-    background: radial-gradient(circle closest-side, #923fff 100%, #080003 1500%);
+    background: radial-gradient(circle closest-side, #c41b54 100%, #94254a 500%);
     color: #fff;
     font-size: 4vw;
-    border: solid 2px #a9a4af;
+    border: solid 3px;
     border-radius: 50px;
 
     width: 70vw;
@@ -123,13 +123,11 @@ main .botones button {
 main .botones button:hover {
     width: 82vw;
     color: gold;
-    box-shadow: gold 0px 0px 10px 1px;
-    font-size: 5vw;
 }
 
 
 main .productos article {
-    background: linear-gradient(to top, #af95bb 30%, #b34be3 100%);
+    background-color: #ceaee0;
     padding: 10px;
     margin-bottom: 50px;
     border-radius: 20px;
@@ -195,7 +193,7 @@ main .inscribete button {
     background: radial-gradient(circle closest-side, #c41b54 100%, #94254a 500%);
     color: #fff;
     font-size: 4vw;
-    border: solid 1px #fff;
+    border: solid 3px;
     border-radius: 50px;
 
     width: 80%;
@@ -207,8 +205,6 @@ main .inscribete button {
 main .inscribete button:hover {
     width: 100%;
     color: gold;
-    box-shadow:#fff 0px 0px 10px 1px;
-    font-size: 5vw;
 }
 
 
