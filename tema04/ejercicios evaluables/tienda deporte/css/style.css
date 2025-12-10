@@ -88,9 +88,10 @@ main img {
 }
 
 main .catalogo {
-    background-color: #ceaee0;
+    background-color: #ff598e;
     width: 100%;
     margin-bottom: 50px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
@@ -131,7 +132,7 @@ main .botones button:hover {
 main .productos article {
     background: linear-gradient(to top, #af95bb 30%, #b34be3 100%);
     padding: 10px;
-    margin-bottom: 50px;
+    margin: 0 20px 50px;
     border-radius: 20px;
 
     text-align: center;
