@@ -56,6 +56,17 @@ header #logo h1:hover {
     box-shadow: 0px 0px 30px #72092c;
 }
 
+header nav {
+    display: none;
+}
+
+header .botones {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 header img {
     width: 50px;
     border-radius: 10px;
@@ -63,16 +74,12 @@ header img {
     transition:  
         background-color 0.3s ease,
         box-shadow 0.3s ease,
-        width 0.5s ease;
+        transform 0.5s ease;
 }
 header img:hover {
     background-color: #d65580;
     box-shadow: 0px 0px 30px #72092c;
-    width: 60px;
-}
-
-header #burger {
-    margin-left: auto;
+    transform: scale(1.2);
 }
 
 
@@ -84,7 +91,7 @@ main {
 }
 
 main img {
-    width: 33.33%;
+    width: 100%;
 }
 
 main .catalogo {
@@ -94,6 +101,7 @@ main .catalogo {
     padding: 10px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -138,7 +146,7 @@ main .productos article {
     text-align: center;
 }
 
-main .productos div {
+main .productos .tarjeta {
     background: linear-gradient(to top, #6f1c96 0%, #b34be3 30%);
     border-radius: 20px;
     padding-bottom: 30px;
@@ -171,10 +179,10 @@ main .productos a {
     transition: 0.3s ease;
 }
 main .productos a:hover {
-color: gold;
-margin-top: 23px;
-margin-bottom: 7px;
-text-decoration: underline;
+    color: gold;
+    margin-top: 23px;
+    margin-bottom: 7px;
+    text-decoration: underline;
 }
 
 
@@ -240,4 +248,77 @@ footer a:hover {
     color: gold;
     margin-bottom: 7px;
     text-decoration: underline;
+}
+
+
+@media (min-width: 600px) {
+
+    header .botones {
+        margin-left: 10px;
+    }
+
+    header nav {
+        margin-left: auto;
+        display: flex;
+        gap: 20px;
+    }
+
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    header nav a:hover {
+        color: gold;
+    }
+
+
+
+    main .catalogo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .catalogo img {
+        width: 33.33%;
+    }
+
+
+
+    main .botones button {
+        font-size: 2em;
+    }
+    main .botones button:hover {
+        font-size: 2.2em;
+    }
+
+
+
+    main .productos .tarjeta {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .productos .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 1.8vw;
+    }
+
+    main .productos img {
+        width: 400px;
+    }
+
+
+    main .inscribete p {
+        font-size: 1.8vw;
+        line-height: 2.2em;
+    }
+
+    main .inscribete button {
+        font-size: 2em;
+    }
+    main .inscribete button:hover {
+        font-size: 2.2em;
+    }
 }

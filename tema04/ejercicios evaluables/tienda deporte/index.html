@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>DecaShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -12,9 +12,17 @@
             <img src="icon/letra-d.png" alt="icono logotipo">
             <h1>DecaShop</h1>
         </a>
-        <img id="burger" src="icon/hamburguesa.png" alt="icono menú hamburguesa">
-        <a id="carrito" href="#"><img src="icon/carrito.png" alt="icono carrito"></a>
-        <a id="avatar" href="#"><img src="icon/avatar.png" alt="icono avatar"></a>
+        
+        <nav>
+            <a href="#">Ofertas</a>
+            <a href="#">Marcas</a>
+            <a href="#">Equipamiento</a>
+        </nav>
+
+        <div class="botones">
+            <a id="carrito" href="#"><img src="icon/carrito.png" alt="icono carrito"></a>
+            <a id="avatar" href="#"><img src="icon/avatar.png" alt="icono avatar"></a>
+        </div>
     </header>
 
     <main>
@@ -32,27 +40,33 @@
 
         <section class="productos">
             <article>
-                <div>
+                <div class="tarjeta">
                     <img src="img/zapatillas-negras.jpg" alt="zapatillas negras">
-                    <h2>64,99€</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos nemo itaque, dolore minima vitae. Reiciendis magnam optio libero sint dolores quis, nostrum dicta velit enim ipsum eum reprehenderit doloribus?</p>
-                    <a href="#">Ver producto</a>
+                    <div class="info">
+                        <h2>64,99€</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos nemo itaque, dolore minima vitae. Reiciendis magnam optio libero sint dolores quis, nostrum dicta velit enim ipsum eum reprehenderit doloribus?</p>
+                        <a href="#">Ver producto</a>
+                    </div>
                 </div>
             </article>
             <article>
-                <div>
+                <div class="tarjeta">
                     <img src="img/zapatillas-negras.jpg" alt="zapatillas negras">
-                    <h2>64,99€</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos nemo itaque, dolore minima vitae. Reiciendis magnam optio libero sint dolores quis, nostrum dicta velit enim ipsum eum reprehenderit doloribus?</p>
-                    <a href="#">Ver producto</a>
+                    <div class="info">
+                        <h2>64,99€</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos nemo itaque, dolore minima vitae. Reiciendis magnam optio libero sint dolores quis, nostrum dicta velit enim ipsum eum reprehenderit doloribus?</p>
+                        <a href="#">Ver producto</a>
+                    </div>
                 </div>
             </article>
             <article>
-                <div>
+                <div class="tarjeta">
                     <img src="img/zapatillas-negras.jpg" alt="zapatillas negras">
-                    <h2>64,99€</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos nemo itaque, dolore minima vitae. Reiciendis magnam optio libero sint dolores quis, nostrum dicta velit enim ipsum eum reprehenderit doloribus?</p>
-                    <a href="#">Ver producto</a>
+                    <div class="info">
+                        <h2>64,99€</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dignissimos nemo itaque, dolore minima vitae. Reiciendis magnam optio libero sint dolores quis, nostrum dicta velit enim ipsum eum reprehenderit doloribus?</p>
+                        <a href="#">Ver producto</a>
+                    </div>
                 </div>
             </article>
         </section>
