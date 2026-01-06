@@ -1,0 +1,128 @@
+$color_letra: #eee;
+$color-fondo: #15a;
+
+@mixin respond-to($size) {
+
+    @if $size == small {
+        @media (max-width: 800px) {
+            @content;
+        }
+    }
+
+    @else if $size == medium {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: $color_letra;
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: darken($color_letra, 65%);
+}
+
+nav {
+    width: 100%;
+    background-color: $color-fondo;
+
+    /* RESPONSIVE */
+    @include respond-to(medium) {
+        display: inline-block;
+    }
+
+    @include respond-to(small) {
+        display: none;
+    }
+
+    li {
+        width: 150px;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        background-color: $color-fondo;
+
+        &:hover {
+            background-color: lighten($color-fondo, 10%);
+        }
+    }
+
+    a {
+        color: $color_letra;
+        text-decoration: none;
+
+        &:hover {
+            color: lighten($color_letra, 10%);
+        }
+    }
+
+    li>ul {
+        display: none; 
+    }
+
+    li:hover>ul {
+        display: inline;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+    }
+}
+
+form {
+    margin: 30px;
+
+    @mixin form {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    input {
+        @include form;
+        border: $color_letra solid 2px;
+    }
+
+    button {
+        @include form;
+        background-color: $color-fondo;
+        color: $color_letra;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($color-fondo, 10%);
+            color: lighten($color_letra, 10%);
+        }
+    }
+}
+
+article:not(.form) {
+    margin: 30px;
+
+    h1 {
+        color: $color-fondo;
+    }
+
+    h1, p {
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    background-color: $color-fondo;
+    color: $color_letra;
+    padding: 10px;
+}
