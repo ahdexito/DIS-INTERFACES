@@ -1,6 +1,16 @@
-$color_letra: #eee;
-$color-fondo: #15a;
+/* - - - - - - - - - - - - - - - - - 
+    DECLARACIÓN DE VARIABLES
+- - - - - - - - - - - - - - - - - */
 
+$color_primario: #15a;
+$color_secundario: #eee;
+
+
+/* - - - - - - - - - - - - - - - - - 
+        DECLARACIÓN DE MIXIN
+- - - - - - - - - - - - - - - - - */
+
+// MIXIN RESPONSIVE
 @mixin respond-to($size) {
     @if $size == small {
         @media (max-width: 800px) {
@@ -15,6 +25,7 @@ $color-fondo: #15a;
     }
 }
 
+// MIXIN PARA ESILO DEL FORMULARIO
 @mixin form {
     margin-bottom: 20px;
     padding: 10px;
@@ -22,13 +33,29 @@ $color-fondo: #15a;
     border-radius: 5px;
 }
 
+// MIXIN PARA LAS TRANSICIONES
 @mixin transition($property, $duration, $timing: linear) {
     transition: $property $duration $timing;
 }
 
-@mixin animation($name, $duration, $timing: linear) {
-    animation: $name $duration $timing-function;
+// MIXIN PARA LAS ANIMACIONES
+@mixin animation($name, $duration, $timing: linear, $iteration: infinite) {
+    animation: $name $duration $timing $iteration;
 }
+
+// ANIMACIÓN QUE ROTA EL ELEMENTO SOBRE EL EJE CENTRAL
+@keyframes agitar {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(5deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+/* - - - - - - - - - - - - - - - - - 
+        DISEÑO DEL CSS
+- - - - - - - - - - - - - - - - - */
 
 * {
     padding: 0;
@@ -37,60 +64,73 @@ $color-fondo: #15a;
 }
 
 header {
+    // USO DE VARIABLE
+    background-color: $color_secundario;
     width: 100%;
     height: 70px;
-    background-color: $color_letra;
     padding: 15px;
-    font-size: 2em;
-    font-weight: bold;
-    color: darken($color_letra, 65%);
+
+    h1 {
+        // USO DEL DARKEN
+        color: darken($color_secundario, 65%);
+        width: 120px;
+        font-size: 2em;
+
+        // USO DEL MIXIN ANIMATION
+        @include animation(agitar, 3s);
+    }
 }
 
 nav {
+    background-color: $color_primario;
+    width: 100%;
+
+    // USO DEL MIXIN RESPONSIVE
     @include respond-to(medium) {
+        // en tamaños grandes se muestra
         display: inline-block;
     }
 
     @include respond-to(small) {
+        // en tamaños pequeños NO se muestra
         display: none;
     }
 
-    width: 100%;
-    background-color: $color-fondo;
-
+    // USO DE ANIDACIÓN PARA ELEMENTOS DEL MISMO PADRE
     li {
+        background-color: $color_primario;
         width: 150px;
         height: 40px;
         padding: 10px;
         text-align: center;
         display: inline-block;
         position: relative;
-        background-color: $color-fondo;
 
+        // USO DE MIXIN TRANSITION
         @include transition(background-color, 0.2s);
-
+        // USO DE '&' PARA REFERIRSE AL ELEMENTO PADRE
         &:hover {
-            background-color: lighten($color-fondo, 10%);
+            background-color: lighten($color_primario, 10%);
         }
     }
 
     a {
-        color: $color_letra;
+        color: $color_secundario;
         text-decoration: none;
 
         @include transition(color, 0.2s);
-
         &:hover {
-            color: lighten($color_letra, 10%);
+            color: lighten($color_secundario, 10%);
         }
     }
 
+    // ESCONDER ELEMENTOS DE SUBMENÚ
     li>ul {
         display: none;
     }
-
+    // MOSTRAR ELEMENTOS AL PASAR EL RATÓN
     li:hover>ul {
-        display: inline;
+        display: inline-block;
         position: absolute;
         top: 40px;
         left: 0px;
@@ -98,44 +138,51 @@ nav {
 }
 
 main {
+    padding-bottom: 50px;
+
+    // USO DEL MIXIN RESPONSIVE
     @include respond-to(medium) {
+        // en pantallas grandes se muestra formulario a la izquierda
+        // y los artículos a la derecha
         display: flex;
     }
-
     @include respond-to(small) {
+        // en pantallas pequeñas se muestran todos los elementos
+        // uno debajo del otro
         display: block;
     }
 }
 
 form {
+    margin: 30px;
+
+    // ajuste de tamaños al cambiar de flex a block
     @include respond-to(medium) {
         width: 300px;
     }
-
     @include respond-to(small) {
-        width: auto
+        width: auto;
     }
 
-    margin: 30px;
-
     input {
-        @include form;
+        border: $color_secundario solid 2px;
 
-        border: $color_letra solid 2px;
+        // USO DEL MIXIN PARA NO REPETIR CÓDIGO
+        @include form;
     }
 
     button {
-        @include form;
-
-        background-color: $color-fondo;
-        color: $color_letra;
+        background-color: $color_primario;
+        color: $color_secundario;
         border: none;
         cursor: pointer;
 
-        @include transition(background-color, 0.2s);
+        // USO DEL MIXIN PARA NO REPETIR CÓDIGO
+        @include form;
 
+        @include transition(background-color, 0.2s);
         &:hover {
-            background-color: lighten($color-fondo, 10%);
+            background-color: lighten($color_primario, 10%);
         }
     }
 }
@@ -144,7 +191,7 @@ article:not(.form) {
     margin: 30px;
 
     h1 {
-        color: $color-fondo;
+        color: $color_primario;
     }
 
     h1, p {
@@ -153,10 +200,12 @@ article:not(.form) {
 }
 
 footer {
+    background-color: $color_primario;
+    color: $color_secundario;
+    width: 100%;
+    padding: 10px;
+
+    // POSICIÓN FIJA PARA MOSTRAR SIEMPRE EL FOOTER
     position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: $color-fondo;
-    color: $color_letra;
-    padding: 10px;
 }
