@@ -17,9 +17,8 @@ header {
 nav {
   width: 100%;
   background-color: #15a;
-  /* RESPONSIVE */
 }
-@media (max-width: 1024px) {
+@media (min-width: 801px) {
   nav {
     display: inline-block;
   }
@@ -37,6 +36,7 @@ nav li {
   display: inline-block;
   position: relative;
   background-color: #15a;
+  transition: background-color 0.2s linear;
 }
 nav li:hover {
   background-color: rgb(21.6363636364, 108.1818181818, 216.3636363636);
@@ -44,6 +44,7 @@ nav li:hover {
 nav a {
   color: #eee;
   text-decoration: none;
+  transition: color 0.2s linear;
 }
 nav a:hover {
   color: white;
@@ -58,8 +59,29 @@ nav li:hover > ul {
   left: 0px;
 }
 
+@media (min-width: 801px) {
+  main {
+    display: flex;
+  }
+}
+@media (max-width: 800px) {
+  main {
+    display: block;
+  }
+}
+
 form {
   margin: 30px;
+}
+@media (min-width: 801px) {
+  form {
+    width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  form {
+    width: auto;
+  }
 }
 form input {
   margin-bottom: 20px;
@@ -77,10 +99,10 @@ form button {
   color: #eee;
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 form button:hover {
   background-color: rgb(21.6363636364, 108.1818181818, 216.3636363636);
-  color: white;
 }
 
 article:not(.form) {
@@ -94,6 +116,9 @@ article:not(.form) h1, article:not(.form) p {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #15a;
   color: #eee;
   padding: 10px;

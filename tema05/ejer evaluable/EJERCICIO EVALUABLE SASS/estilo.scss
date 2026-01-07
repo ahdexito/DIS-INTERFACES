@@ -2,7 +2,6 @@ $color_letra: #eee;
 $color-fondo: #15a;
 
 @mixin respond-to($size) {
-
     @if $size == small {
         @media (max-width: 800px) {
             @content;
@@ -10,10 +9,25 @@ $color-fondo: #15a;
     }
 
     @else if $size == medium {
-        @media (max-width: 1024px) {
+        @media (min-width: 801px) {
             @content;
         }
     }
+}
+
+@mixin form {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@mixin transition($property, $duration, $timing: linear) {
+    transition: $property $duration $timing;
+}
+
+@mixin animation($name, $duration, $timing: linear) {
+    animation: $name $duration $timing-function;
 }
 
 * {
@@ -33,10 +47,6 @@ header {
 }
 
 nav {
-    width: 100%;
-    background-color: $color-fondo;
-
-    /* RESPONSIVE */
     @include respond-to(medium) {
         display: inline-block;
     }
@@ -44,6 +54,9 @@ nav {
     @include respond-to(small) {
         display: none;
     }
+
+    width: 100%;
+    background-color: $color-fondo;
 
     li {
         width: 150px;
@@ -54,6 +67,8 @@ nav {
         position: relative;
         background-color: $color-fondo;
 
+        @include transition(background-color, 0.2s);
+
         &:hover {
             background-color: lighten($color-fondo, 10%);
         }
@@ -63,13 +78,15 @@ nav {
         color: $color_letra;
         text-decoration: none;
 
+        @include transition(color, 0.2s);
+
         &:hover {
             color: lighten($color_letra, 10%);
         }
     }
 
     li>ul {
-        display: none; 
+        display: none;
     }
 
     li:hover>ul {
@@ -80,31 +97,45 @@ nav {
     }
 }
 
-form {
-    margin: 30px;
-
-    @mixin form {
-        margin-bottom: 20px;
-        padding: 10px;
-        width: 100%;
-        border-radius: 5px;
+main {
+    @include respond-to(medium) {
+        display: flex;
     }
+
+    @include respond-to(small) {
+        display: block;
+    }
+}
+
+form {
+    @include respond-to(medium) {
+        width: 300px;
+    }
+
+    @include respond-to(small) {
+        width: auto
+    }
+
+    margin: 30px;
 
     input {
         @include form;
+
         border: $color_letra solid 2px;
     }
 
     button {
         @include form;
+
         background-color: $color-fondo;
         color: $color_letra;
         border: none;
         cursor: pointer;
 
+        @include transition(background-color, 0.2s);
+
         &:hover {
             background-color: lighten($color-fondo, 10%);
-            color: lighten($color_letra, 10%);
         }
     }
 }
@@ -122,6 +153,9 @@ article:not(.form) {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: $color-fondo;
     color: $color_letra;
     padding: 10px;
