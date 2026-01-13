@@ -15,7 +15,8 @@ header {
   height: 120px;
 }
 header .logo {
-  width: 250px;
+  width: 200px;
+  margin: 10px;
 }
 header .searchbar {
   width: 700px;
@@ -104,4 +105,4 @@ main .novedades p {
 main .novedades a {
   color: #fff;
   text-decoration: none;
-}/*# sourceMappingURL=estilo.css.map */
+}/*# sourceMappingURL=index.css.map */

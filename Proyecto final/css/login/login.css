@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Imprima&family=Jura:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Imprima&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Jura;
+}
+
+body {
+  background-color: #202020;
+}
+
+main {
+  background-color: #3d3d3d;
+  width: 80%;
+  height: 700px;
+  margin: 100px 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 20px;
+  border-radius: 5px;
+  box-shadow: #000 0px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+main img {
+  width: 300px;
+}
+main h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow: #202020 5px 5px 0px;
+}
+main form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px;
+  background-color: #f35111;
+  border: rgb(101.864, 32.528, 5.136) 3px solid;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  padding: 30px;
+}
+main form input {
+  color: #202020;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
+  border: 0;
+  padding: 15px;
+  font-size: 1.2em;
+}
+main form button {
+  color: #202020;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
+  border: 0;
+  padding: 15px;
+  color: #fff;
+  background-color: rgb(150.416, 48.032, 7.584);
+  padding: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+main p {
+  color: #fff;
+  font-size: 1.2em;
+}
+main p a {
+  color: #f35111;
+  font-weight: bold;
+}/*# sourceMappingURL=login.css.map */

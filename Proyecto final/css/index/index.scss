@@ -6,8 +6,6 @@ $color-2: #3f3f3f;
 $color-3: #ad0b0b;
 $color-4: #fff;
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +21,8 @@ header {
     height: 120px;
 
     .logo {
-        width: 250px;
+        width: 200px;
+        margin: 10px;
     }
 
     .searchbar {
