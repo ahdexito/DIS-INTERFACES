@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier";
+}
+
+html {
+  background: linear-gradient(#ee441e 0%, #ffffff 100%);
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#page > header {
+  color: #fff;
+  border-bottom: #000 6px solid;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(#04568d 0%, #27aade);
+  padding: 20px;
+}
+
+nav {
+  font-size: 1.4em;
+  padding: 10px;
+  background: linear-gradient(#a79521 0%, #f8d83c 100%);
+  text-shadow: #000 2px 2px 2px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+nav ul li:hover {
+  color: #ee441e;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li a:hover {
+  color: #ee441e;
+}
+nav ul li > ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  width: 130px;
+  border-radius: 5px;
+  top: 45px;
+  left: -15px;
+  background-color: #ee441e;
+}
+nav ul li:hover > ul li:hover {
+  background-color: rgb(201.7561983471, 49.3181818182, 15.2438016529);
+  width: 100%;
+  border-radius: 5px;
+}
+nav ul li:hover > ul a:hover {
+  color: #27aade;
+}
+
+main .movil {
+  border-style: solid;
+  border-width: 70px 20px 64px 22px;
+  border-image: url(./imgs/movil.png) 70 20 64 22;
+  -webkit-border-image: url(./imgs/movil.png) 70 20 64 22;
+  -moz-border-image: url(./imgs/movil.png) 70 20 64 22;
+  -o-border-image: url(./imgs/movil.png) 70 20 64 22;
+  text-align: center;
+  padding: 5px 5px 22px 5px;
+  margin: 30px 14px 14px 14px;
+}/*# sourceMappingURL=index.css.map */
