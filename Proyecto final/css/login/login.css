@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Imprima&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Imprima";
+}
+
+html {
+  background: url(../../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body {
+  background-color: rgba(255, 255, 255, 0.3843137255);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+html body header {
+  background-color: rgba(202, 48, 94, 0.4745098039);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+html body header img {
+  width: 100px;
+}
+html body header h1 {
+  font-size: 3.5em;
+  color: #ffffff;
+  text-shadow: #162452 5px 5px 0px;
+}
+@media (max-width: 600px) {
+  html body header h1 {
+    font-size: 3em;
+  }
+}
+html body h2 {
+  font-size: 1.5em;
+  margin: 20px;
+  text-align: center;
+  color: #162452;
+}
+html body main {
+  background-color: rgba(82.8276699029, 78.4101941748, 149.0898058252, 0.6588235294);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+@media (max-width: 600px) {
+  html body main {
+    flex-direction: column;
+  }
+}
+@media (min-width: 601px) {
+  html body main {
+    flex-direction: row;
+  }
+}
+html body main h3 {
+  color: #ffffff;
+  text-shadow: #162452 3px 3px 0;
+  font-size: 2em;
+}
+html body main form {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+}
+html body main form input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+}
+html body main form .recuerdame {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+html body main form .recuerdame .check {
+  width: 20px;
+  height: 20px;
+}
+html body main form .recuerdame label {
+  color: #ffffff;
+}
+html body main form div.register-footer {
+  display: flex;
+  gap: 20px;
+}
+html body main form div.register-footer a {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #162452;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  flex: 0;
+  background-color: #162452;
+  padding: 15px 15px;
+}
+html body main form div.register-footer a:hover {
+  background-color: #ffffff;
+  color: #162452;
+  box-shadow: #162452 4px 5px;
+  transform: scale(0.98);
+}
+html body main form button {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #162452;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+html body main form button:hover {
+  background-color: #ffffff;
+  color: #162452;
+  box-shadow: #162452 4px 5px;
+  transform: scale(0.98);
+}
+html body main hr {
+  border: 2px solid #162452;
+  border-radius: 10px;
+}
+html body main .registrarse {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+}
+html body main .registrarse p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.8em;
+  text-align: center;
+}
+html body main .registrarse button {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #162452;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+html body main .registrarse button:hover {
+  background-color: #ffffff;
+  color: #162452;
+  box-shadow: #162452 4px 5px;
+  transform: scale(0.98);
+}/*# sourceMappingURL=login.css.map */
