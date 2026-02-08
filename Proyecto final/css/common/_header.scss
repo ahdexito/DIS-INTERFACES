@@ -4,11 +4,12 @@ header.body-header {
     background: 
         linear-gradient(
             160deg, 
-            $color-accent-transparent 55%, 
-            $color-primary-transparent 80%
+            $color-primary-transparent,
+            $color-accent-transparent,
+            $color-dark,
         );
     border-radius: 100px;
-    padding: 20px 20px;
+    padding: 10px 20px;
     padding-right: 10px;
     display: flex;
     align-items: center;
@@ -33,6 +34,7 @@ header.body-header {
         h1 {
             color: $color-light;
             font-size: 3em;
+            font-family: $titulo;
         }
     }
 
@@ -55,7 +57,7 @@ header.body-header {
             text-decoration: none;
             transition: all 0.1s ease;
 
-            &:hover { transform: scale(1.2); }
+            &:hover { transform: scale(1.1); }
 
             i { 
                 color: $color-light;
@@ -63,10 +65,11 @@ header.body-header {
             }
 
             img {
-                margin-right: 10px;
+                margin-top: 3px;
+                margin-right: 5px;
                 width: 90px;
-                border: 5px solid $color-dark;
                 border-radius: 100px;
+                box-shadow: darken($color-dark, $amount: 20) 0 0 20px 5px;
             }
         }
     }

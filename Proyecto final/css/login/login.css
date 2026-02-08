@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Imprima&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Imprima";
+  font-family: "Google Sans Code";
 }
 
 html {
@@ -28,7 +28,7 @@ html body {
   gap: 10px;
 }
 html body header {
-  background-color: rgba(202, 48, 94, 0.4745098039);
+  background: linear-gradient(160deg, rgba(16, 36, 71, 0.5568627451), rgba(182, 30, 76, 0.7254901961), rgba(182, 30, 76, 0.7254901961), rgba(16, 36, 71, 0.5568627451));
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -42,8 +42,9 @@ html body header img {
 }
 html body header h1 {
   font-size: 3.5em;
-  color: #ffffff;
-  text-shadow: #162452 5px 5px 0px;
+  color: #f5f5ff;
+  text-shadow: #163161 5px 5px 0px;
+  font-family: "Fascinate";
 }
 @media (max-width: 600px) {
   html body header h1 {
@@ -54,10 +55,10 @@ html body h2 {
   font-size: 1.5em;
   margin: 20px;
   text-align: center;
-  color: #162452;
+  color: #163161;
 }
 html body main {
-  background-color: rgba(82.8276699029, 78.4101941748, 149.0898058252, 0.6588235294);
+  background: linear-gradient(to bottom, rgba(16, 36, 71, 0.5568627451), rgba(110, 40, 143, 0.9098039216), rgba(110, 40, 143, 0.9098039216), rgba(16, 36, 71, 0.5568627451));
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -75,9 +76,10 @@ html body main {
   }
 }
 html body main h3 {
-  color: #ffffff;
-  text-shadow: #162452 3px 3px 0;
+  color: #f5f5ff;
+  text-shadow: #163161 3px 3px 0;
   font-size: 2em;
+  font-family: "Fascinate";
 }
 html body main form {
   flex: 1;
@@ -106,7 +108,7 @@ html body main form .recuerdame .check {
   height: 20px;
 }
 html body main form .recuerdame label {
-  color: #ffffff;
+  color: #f5f5ff;
 }
 html body main form div.register-footer {
   display: flex;
@@ -120,17 +122,17 @@ html body main form div.register-footer a {
   font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
-  background-color: #162452;
-  color: #ffffff;
+  background-color: #163161;
+  color: #f5f5ff;
   transition: all 0.2s ease;
   flex: 0;
-  background-color: #162452;
+  background-color: #163161;
   padding: 15px 15px;
 }
 html body main form div.register-footer a:hover {
-  background-color: #ffffff;
-  color: #162452;
-  box-shadow: #162452 4px 5px;
+  background-color: #f5f5ff;
+  color: #163161;
+  box-shadow: #163161 4px 5px;
   transform: scale(0.98);
 }
 html body main form button {
@@ -141,18 +143,18 @@ html body main form button {
   font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
-  background-color: #162452;
-  color: #ffffff;
+  background-color: #163161;
+  color: #f5f5ff;
   transition: all 0.2s ease;
 }
 html body main form button:hover {
-  background-color: #ffffff;
-  color: #162452;
-  box-shadow: #162452 4px 5px;
+  background-color: #f5f5ff;
+  color: #163161;
+  box-shadow: #163161 4px 5px;
   transform: scale(0.98);
 }
 html body main hr {
-  border: 2px solid #162452;
+  border: 2px solid #163161;
   border-radius: 10px;
 }
 html body main .registrarse {
@@ -168,9 +170,10 @@ html body main .registrarse p {
   flex: 1;
   display: flex;
   align-items: center;
-  color: #ffffff;
-  font-size: 1.8em;
+  color: #f5f5ff;
+  font-size: 1.6em;
   text-align: center;
+  font-family: "SN Pro";
 }
 html body main .registrarse button {
   width: 100%;
@@ -180,13 +183,13 @@ html body main .registrarse button {
   font-size: 1.1em;
   font-weight: bold;
   cursor: pointer;
-  background-color: #162452;
-  color: #ffffff;
+  background-color: #163161;
+  color: #f5f5ff;
   transition: all 0.2s ease;
 }
 html body main .registrarse button:hover {
-  background-color: #ffffff;
-  color: #162452;
-  box-shadow: #162452 4px 5px;
+  background-color: #f5f5ff;
+  color: #163161;
+  box-shadow: #163161 4px 5px;
   transform: scale(0.98);
 }/*# sourceMappingURL=login.css.map */

@@ -2,26 +2,31 @@
 
 section.services-body article {
     width: 380px;
-    background-color: $color-primary-transparent;
+    background: linear-gradient(
+        $color-dark,
+        $color-dark-transparent
+    );
     padding: 10px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 
     .article-header {
-        background-color: $color-dark-transparent;
+        background-color: $color-primary;
         padding: 15px;
         border-radius: 10px;
 
         h3 { 
             font-size: 1.5em; 
             margin-bottom: 5px;
-            color: $color-accent-light
+            color: $color-light;
+            text-shadow: $color-dark 3px 3px;
         }
 
         p { 
             font-style: italic; 
-            color: $color-light;
+            color: $color-accent-light;
+            text-shadow: $color-dark 2px 2px;
         }
     }
 
@@ -38,13 +43,19 @@ section.services-body article {
             list-style-type: none;
 
             li {
-                background-color: $color-light-transparent;
+                background-color: $color-light;
                 padding: 10px;
                 border-radius: 10px;
 
-                u { color: $color-accent; }
+                u { color: $color-primary; }
 
-                a { color: $color-dark; }
+
+                a {
+                    color: #2ecc71;
+                    background-color: $color-dark;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                }
             }
         }
     }

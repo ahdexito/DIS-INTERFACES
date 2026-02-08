@@ -1,248 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eComunitree | Index</title>
+    <title>WebMaster | Mi Aula Virtual</title>
     <link rel="stylesheet" href="css/index/index.css">
     <script src="https://kit.fontawesome.com/bc8e4b1cda.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="body-header">
         <a href="index.html" class="btn-index">
-            <img src="img/logo-transparencia.png" alt="logotipo">
-            <h1>eComunitree</h1>
+            <img src="img/logo-webmaster.png" alt="logotipo">
+            <h1>WebMaster</h1>
         </a>
         <div class="user">
             <div class="user-name">
-                <p>Bienvenido,</p>
-                <p>Ángel</p>
+                <p>Estudiante,</p>
+                <p>Walter</p>
             </div>
             <a href="login.html">
-                <!-- <i class="fa-regular fa-circle-user usuario"></i> -->
-                <img src="img_user/oscar.jpg" alt="">
+                <img src="img_user/walter.jpg" alt="perfil">
             </a>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li>
-                <a href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                    <p>Inicio</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-plus"></i>
-                    <p>Nueva incidencia</p>
-                </a>
-            </li>
-            <li>
-                <a href="servicios.html">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <p>Servicios</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <p>Calendario</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-regular fa-file-lines"></i>
-                    <p>Documentación</p>
-                </a>
-            </li>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i><p>Inicio</p></a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-play"></i><p>Directos</p></a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-book-open"></i><p>Cursos</p></a></li>
+            <li><a href="#"><i class="fa-solid fa-calendar-check"></i><p>Agenda</p></a></li>
+            <li><a href="#"><i class="fa-solid fa-graduation-cap"></i><p>Mi Aula</p></a></li>
         </ul>
     </nav>
 
     <main>
-        <aside class="main-aside">
-            <h3>Navegación</h3>
-            <hr>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Inicio
-                    </a></li>
-                <li>
-                    <a href="#">
-                    <i class="fa-solid fa-plus"></i>
-                    Nueva incidencia
-                    </a></li>
-                <li>
-                    <a href="servicios.html">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    Servicios
-                </a></li>
-                <li>
-                    <a href="#">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    Calendario
-                </a></li>
-                <li><a href="#">
-                    <i class="fa-regular fa-file-lines"></i>
-                    Documentación
-                </a></li>
-                <li><a href="panel_control.html">
-                    <i class="fa-solid fa-gear"></i>
-                    Panel de control
-                </a></li>
-            </ul>
-        </aside>
-
         <section class="feed">
             <header class="section-header">
-                <h2>Todas las publicaciones</h2>
+                <h2>Tablón de Anuncios</h2>
                 <div class="section-btns">
-                    <a href="#" class="btn-order">
-                        <i class="fa-solid fa-sort"></i>
-                        <p>ORDENAR</p>
-                    </a>
-                    <a href="#" class="btn-filter">
-                        <i class="fa-solid fa-filter"></i>
-                        <p>FILTRAR</p>
-                    </a>
+                    <a href="#" class="btn-order"><i class="fa-solid fa-bolt"></i><p>RECIENTES</p></a>
+                    <a href="#" class="btn-filter"><i class="fa-solid fa-tag"></i><p>CATEGORÍAS</p></a>
                 </div>
+                <hr>
             </header>
-            <hr>
+
             <article class="vote-card">
                 <header class="article-header">
                     <div class="article-header-user">
-                        <img src="img_user/enrique.jpg" alt="">
+                        <img src="img_user/jesse.jpg" alt="">
                         <div class="user-info">
-                            <strong>Enrique</strong>
-                            <p>Vicepresidente</p>
+                            <strong>Jesse Pinkman</strong>
+                            <p>Instructor Frontend</p>
                         </div>
                     </div>
                     <div class="article-header-date">
-                        <strong>7:27h<i class="fa-regular fa-clock"></i></strong>
-                        <p>31/01/26<i class="fa-solid fa-calendar-days"></i></p>
+                        <strong>Hace 10min<i class="fa-regular fa-clock"></i></strong>
+                        <p>07/02/26<i class="fa-solid fa-calendar-days"></i></p>
                     </div>
                 </header>
 
                 <section class="article-body">
                     <header class="article-body-title">
-                        <h3>
-                            <i class="fa-solid fa-envelope"></i>
-                            VOTACIÓN
-                        </h3>
-                        <h4>Nuevo color para las paredes del rellano.</h4>
+                        <h3><i class="fa-solid fa-square-poll-vertical"></i> VOTACIÓN DE PROYECTO</h3>
+                        <h4>¿Qué proyecto final de React prefieres?</h4>
                     </header>
-
                     <div class="article-body-content">
-                        <p>
-                            <i class="fa-regular fa-message"></i>
-                            La pintura está empezando a desconcharse por la humedad. 
-                            Los pintores vendrán la semana que viene.
-                        </p>
+                        <p><i class="fa-regular fa-comment"></i> Queremos que el proyecto final sea útil para vuestro portfolio. Elegid la temática que más os motive para el Sprint final.</p>
                     </div>
                 </section>
 
                 <footer class="article-footer">
-                    <strong>
-                        <i class="fa-solid fa-triangle-exclamation"></i>
-                        TODAVÍA NO HAS VOTADO
-                    </strong>
-                    <p>
-                        <i class="fa-solid fa-hourglass-half"></i>
-                        Expira en: <time>3 días</time>
-                    </p>
+                    <strong><i class="fa-solid fa-check-to-slot"></i> TU VOTO CUENTA</strong>
                     <hr>
                     <div class="vote-btns">
-                        <button>Blanco</button>
-                        <button>Beige</button>
-                        <button>Azul cielo</button>
+                        <button>E-commerce</button>
+                        <button>Red Social</button>
+                        <button>SaaS Financiero</button>
                     </div>
                     <hr>
-                    <button class="vote-confirm">CONFIRMAR</button>
+                    <button class="vote-confirm">CONFIRMAR SELECCIÓN</button>
                 </footer>
             </article>
+
+            <hr class="hr-feed">
 
             <article class="advert-card">
                 <header class="article-header">
                     <div class="article-header-user">
-                        <img src="img_user/antonio.jpg" alt="">
+                        <img src="img_user/gus.jpg" alt="">
                         <div class="user-info">
-                            <strong>Antonio</strong>
-                            <p>Presidente</p>
+                            <strong>Gustavo Fring</strong>
+                            <p>Administrador</p>
                         </div>
                     </div>
                     <div class="article-header-date">
-                        <strong>20:15h<i class="fa-regular fa-clock"></i></strong>
-                        <p>29/01/26<i class="fa-solid fa-calendar-days"></i></p>
+                        <strong>Hace 1h<i class="fa-regular fa-clock"></i></strong>
+                        <p>07/02/26<i class="fa-solid fa-calendar-days"></i></p>
                     </div>
                 </header>    
                 
                 <section class="article-body">
                     <header class="article-body-title">
-                        <h3>
-                            <i class="fa-solid fa-bullhorn"></i>
-                            ANUNCIO
-                        </h3>
-                        <h4>Corte de luz.</h4>
+                        <h3><i class="fa-solid fa-video"></i> MASTERCLASS EN VIVO</h3>
+                        <h4>Optimización SEO con Next.js</h4>
                     </header>
-
                     <div class="article-body-content">
-                        <p>
-                            <i class="fa-regular fa-message"></i>
-                            El próximo LUNES 2 DE FEBRERO a las 9:45h se cortará el suministro 
-                            de luz por labores de mantenimiento. El corte durará 
-                            hasta las 13:00h aproximadamente.
-                        </p>
+                        <p><i class="fa-regular fa-calendar-check"></i> Este viernes a las 17:00h tendremos a un invitado especial de Google explicándonos las claves del SEO técnico moderno.</p>
                     </div>
                 </section>
             </article>
 
-            
-            <article class="incidence-card">
+            <hr class="hr-feed">
+
+            <article class="vote-card">
                 <header class="article-header">
                     <div class="article-header-user">
-                        <img src="img_user/fina.jpg" alt="">
+                        <img src="img_user/mike.jpg" alt="">
                         <div class="user-info">
-                            <strong>Fina</strong>
-                            <p>Vecina</p>
+                            <strong>Mike Ehrmantraut</strong>
+                            <p>Instructor Node.js</p>
                         </div>
                     </div>
-                    <aside class="article-header-date">
-                        <strong>11:27h<i class="fa-regular fa-clock"></i></strong>
-                        <p>27/01/26<i class="fa-solid fa-calendar-days"></i></p>
-                    </aside>
+                    <div class="article-header-date">
+                        <strong>18:30h<i class="fa-regular fa-clock"></i></strong>
+                        <p>06/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
                 </header>
 
                 <section class="article-body">
                     <header class="article-body-title">
-                        <h3>
-                        <i class="fa-solid fa-triangle-exclamation"></i>
-                            INCIDENCIA
-                        </h3>
-                        <h4>Desperfecto estético.</h4>
-                        <p>Pintura de las paredes desgastada.</p>
+                        <h3><i class="fa-solid fa-file-arrow-up"></i> ENTREGA DE PROYECTO</h3>
+                        <h4>API REST con Express y MongoDB</h4>
                     </header>
-
                     <div class="article-body-content">
-                        <img src="img_incidencias/pintura-desconchada.jpg" alt="">
-                        <p>
-                            <i class="fa-regular fa-message"></i>
-                            Hola a todos. Me gustaría llamar la atención 
-                            sobre el pésimo estado de las paredes del rellano; 
-                            la pintura está totalmente desgastada y da una imagen de 
-                            abandono lamentable. Solicito que se incluya su 
-                            repintado urgente en la próxima junta para mantener la 
-                            finca en condiciones dignas.
-                        </p>
+                        <p><i class="fa-solid fa-triangle-exclamation"></i> Recordad que el plazo para subir el repositorio de GitHub finaliza este domingo a medianoche. ¡No lo dejéis para el último segundo!</p>
+                    </div>
+                </section>
+
+                <footer class="article-footer">
+                    <button class="vote-confirm"><i class="fa-solid fa-upload"></i> SUBIR PROYECTO</button>
+                </footer>
+            </article>
+
+            <hr class="hr-feed">
+
+            <article class="advert-card">
+                <header class="article-header">
+                    <div class="article-header-user">
+                        <img src="img_user/gus.jpg" alt="">
+                        <div class="user-info">
+                            <strong>Gustavo Fring</strong>
+                            <p>Administrador</p>
+                        </div>
+                    </div>
+                    <div class="article-header-date">
+                        <strong>12:45h<i class="fa-regular fa-clock"></i></strong>
+                        <p>06/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
+                </header>    
+                
+                <section class="article-body">
+                    <header class="article-body-title">
+                        <h3><i class="fa-solid fa-gift"></i> RECURSO EXCLUSIVO</h3>
+                        <h4>Ebook: Guía definitiva de Flexbox y Grid</h4>
+                    </header>
+                    <div class="article-body-content">
+                        <p><i class="fa-solid fa-download"></i> Hemos actualizado nuestra biblioteca con un PDF interactivo para dominar los layouts de CSS. Ya disponible en la sección de descargas.</p>
                     </div>
                 </section>
             </article>
+
+            <hr class="hr-feed">
+
+            <article class="vote-card">
+                <header class="article-header">
+                    <div class="article-header-user">
+                        <img src="img_user/kim.jpg" alt="perfil">
+                        <div class="user-info">
+                            <strong>Kim Wexler</strong>
+                            <p>Instructora UI/UX</p>
+                        </div>
+                    </div>
+                    <div class="article-header-date">
+                        <strong>09:00h<i class="fa-regular fa-clock"></i></strong>
+                        <p>06/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
+                </header>
+
+                <section class="article-body">
+                    <header class="article-body-title">
+                        <h3><i class="fa-solid fa-palette"></i> REVISIÓN DE PORTFOLIOS</h3>
+                        <h4>¿Qué herramienta prefieres para el Prototipado?</h4>
+                    </header>
+                    <div class="article-body-content">
+                        <p><i class="fa-regular fa-lightbulb"></i> Vamos a realizar una sesión intensiva de feedback. Queremos saber con qué software os sentís más cómodos para trabajar los flujos de usuario.</p>
+                    </div>
+                </section>
+
+                <footer class="article-footer">
+                    <strong><i class="fa-solid fa-check-to-slot"></i> ELIGE TU HERRAMIENTA</strong>
+                    <hr>
+                    <div class="vote-btns">
+                        <button>Figma</button>
+                        <button>Adobe XD</button>
+                        <button>Penpot</button>
+                    </div>
+                    <hr>
+                    <button class="vote-confirm">ENVIAR PREFERENCIA</button>
+                </footer>
+            </article>
+
+            <hr class="hr-feed">
+
+            <article class="vote-card">
+                <header class="article-header">
+                    <div class="article-header-user">
+                        <img src="img_user/gus.jpg" alt="">
+                        <div class="user-info">
+                            <strong>Gustavo Fring</strong>
+                            <p>Administrador</p>
+                        </div>
+                    </div>
+                    <div class="article-header-date">
+                        <strong>21:00h<i class="fa-regular fa-clock"></i></strong>
+                        <p>05/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
+                </header>
+
+                <section class="article-body">
+                    <header class="article-body-title">
+                        <h3><i class="fa-solid fa-briefcase"></i> NUEVA VACANTE</h3>
+                        <h4>Junior Frontend Developer (Remote)</h4>
+                    </header>
+                    <div class="article-body-content">
+                        <p><i class="fa-solid fa-building"></i> TechStartup busca alumnos de WebMaster con conocimientos en React para contrato en prácticas remuneradas. ¿Te interesa?</p>
+                    </div>
+                </section>
+
+                <footer class="article-footer">
+                    <div class="vote-btns">
+                        <button><i class="fa-solid fa-eye"></i> Ver detalles</button>
+                        <button>Aplicar ahora</button>
+                    </div>
+                </footer>
+            </article>
+
+            <hr class="hr-feed">
+
+            <article class="advert-card">
+                <header class="article-header">
+                    <div class="article-header-user">
+                        <img src="img_user/saul.jpg" alt="perfil">
+                        <div class="user-info">
+                            <strong>Saul Goodman</strong>
+                            <p>Instructor Ciberseguridad</p>
+                        </div>
+                    </div>
+                    <div class="article-header-date">
+                        <strong>14:20h<i class="fa-regular fa-clock"></i></strong>
+                        <p>05/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
+                </header>
+                
+                <section class="article-body">
+                    <header class="article-body-title">
+                        <h3><i class="fa-solid fa-shield-halved"></i> TALLER PRÁCTICO</h3>
+                        <h4>Introducción al Pentesting Ético</h4>
+                    </header>
+                    <div class="article-body-content">
+                        <p><i class="fa-solid fa-terminal"></i> Mañana a las 16:00h iniciaremos el workshop de seguridad en aplicaciones web. Es imprescindible tener instalado el entorno virtual que os compartí por Slack.</p>
+                    </div>
+                </section>
+            </article>
+
+            <hr class="hr-feed">
+
+            <article class="advert-card">
+                <header class="article-header">
+                    <div class="article-header-user">
+                        <img src="img_user/gus.jpg" alt="">
+                        <div class="user-info">
+                            <strong>Gustavo Fring</strong>
+                            <p>Administrador IT</p>
+                        </div>
+                    </div>
+                    <div class="article-header-date">
+                        <strong>08:00h<i class="fa-regular fa-clock"></i></strong>
+                        <p>05/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
+                </header>    
+                
+                <section class="article-body">
+                    <header class="article-body-title">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> PARADA TÉCNICA</h3>
+                        <h4>Actualización de Servidores</h4>
+                    </header>
+                    <div class="article-body-content">
+                        <p><i class="fa-solid fa-info-circle"></i> El acceso al Aula Virtual se verá interrumpido brevemente el domingo de 02:00 a 04:00 AM por labores de mejora en la base de datos.</p>
+                    </div>
+                </section>
+            </article>
+
+            <hr class="hr-feed">
+
+            <article class="vote-card">
+                <header class="article-header">
+                    <div class="article-header-user">
+                        <img src="img_user/skyler.jpg" alt="perfil">
+                        <div class="user-info">
+                            <strong>Skyler White</strong>
+                            <p>Instructora IA & Data</p>
+                        </div>
+                    </div>
+                    <div class="article-header-date">
+                        <strong>17:40<i class="fa-regular fa-clock"></i></strong>
+                        <p>04/02/26<i class="fa-solid fa-calendar-days"></i></p>
+                    </div>
+                </header>
+
+                <section class="article-body">
+                    <header class="article-body-title">
+                        <h3><i class="fa-solid fa-brain"></i> PROYECTO MACHINE LEARNING</h3>
+                        <h4>Confirmación de Grupos</h4>
+                    </header>
+                    <div class="article-body-content">
+                        <p><i class="fa-solid fa-users"></i> He habilitado el selector de grupos para el modelo de predicción de datos. Por favor, aseguraos de estar todos registrados antes del lunes.</p>
+                    </div>
+                </section>
+
+                <footer class="article-footer">
+                    <button class="vote-confirm"><i class="fa-solid fa-user-plus"></i> UNIRSE A UN EQUIPO</button>
+                </footer>
+            </article>
+
             <a href="index.html" class="btn-up">
                 <i class="fa-solid fa-angles-up"></i>
             </a>
         </section>
+
+        <aside class="main-aside">
+            <h3>Navegación</h3>
+            <hr>
+            <ul>
+                <li class="has-dropdown">
+                    <p><i class="fa-solid fa-user-gear"></i> Perfil</p>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-solid fa-address-card"></i> Mis datos</a></li>
+                        <li><a href="#"><i class="fa-solid fa-sliders"></i> Configuración</a></li>
+                        <li><a href="#"><i class="fa-solid fa-credit-card"></i> Historial de pagos</a></li>
+                        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <p><i class="fa-solid fa-certificate"></i> Logros</p>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-solid fa-graduation-cap"></i> Mis certificados</a></li>
+                        <li><a href="#"><i class="fa-solid fa-award"></i> Badges (Insignias)</a></li>
+                        <li><a href="#"><i class="fa-solid fa-ranking-star"></i> Ranking</a></li>
+                        <li><a href="#"><i class="fa-solid fa-coins"></i> Puntos acumulados</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <p><i class="fa-solid fa-download"></i> Recursos</p>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-solid fa-file-pdf"></i> Documentación PDF</a></li>
+                        <li><a href="#"><i class="fa-solid fa-code"></i> Plantillas de código</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book-atlas"></i> Glosario técnico</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Enlaces externos</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <p><i class="fa-solid fa-question"></i> Dudas / Foro</p>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fa-solid fa-comments"></i> General</a></li>
+                        <li><a href="#"><i class="fa-solid fa-lightbulb"></i> Proyectos</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bug"></i> Errores de código</a></li>
+                        <li><a href="#"><i class="fa-solid fa-briefcase"></i> Bolsa de trabajo</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i> Noticias</a></li>
+
+                <li><a href="#"><i class="fa-solid fa-users"></i> Sobre nosotros</a></li>
+            </ul>
+        </aside>
     </main>
+
+    <footer class="main-footer">
+        <section>
+            <article class="footer-sitemap">
+                <h4>Mapa Web</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="courses.html">Cursos Disponibles</a></li>
+                    <li><a href="#">Calendario Escolar</a></li>
+                    <li><a href="#">Bolsa de Empleo</a></li>
+                    <li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <article class="footer-social">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <article class="footer-info">
+                <h4>Soporte WebMaster</h4>
+                <ul>
+                    <li><p><i class="fa-solid fa-envelope"></i> ayuda@webmaster.com</p></li>
+                    <li><p><i class="fa-solid fa-location-dot"></i> Campus Tecnológico, Calle Código 101</p></li>
+                </ul>
+            </article>
+        </section>
+            
+        <nav class="footer-policy">
+            <small>
+                <a href="#">Aviso Legal</a> | 
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Cookies</a>
+            </small>
+        </nav>
+
+        <div class="footer-copy">
+            <p><strong>2026 &copy; WebMaster.</strong> Impulsando el talento tecnológico.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Imprima&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
-
 @import '../common/variables';
 @import '../common/mixins';
 
@@ -40,7 +38,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Imprima';
+    font-family: 'Google Sans Code';
 }
 
 // =========================================================
@@ -74,7 +72,13 @@ html {
         // HEADER
         // =========================================================
         header {
-            background-color: $color-accent-transparent;
+            background: linear-gradient(
+                160deg,
+                $color-dark-transparent,
+                $color-primary-transparent,
+                $color-primary-transparent,
+                $color-dark-transparent
+            );
             border-radius: 15px;
             padding: 20px;
             display: flex;
@@ -92,6 +96,7 @@ html {
                 font-size: 3.5em;
                 color: $color-light;
                 text-shadow: $color-dark 5px 5px 0px;
+                font-family: $titulo;
             }
         }
     
@@ -106,7 +111,13 @@ html {
         // MAIN
         // =========================================================
         main {
-            background-color: darken($color-primary-transparent, $amount: 15);
+            background: linear-gradient(
+                to bottom,
+                $color-dark-transparent,
+                $color-accent-transparent,
+                $color-accent-transparent,
+                $color-dark-transparent
+            );
             border-radius: 15px;
             padding: 20px;
             display: flex;
@@ -120,6 +131,7 @@ html {
                 color: $color-light;
                 text-shadow: $color-dark 3px 3px 0;
                 font-size: 2em;
+                font-family: $titulo;
             }
         
             // =========================================================
@@ -177,9 +189,9 @@ html {
                     display: flex;
                     align-items: center;
                     color: $color-light;
-                    font-size: 1.8em;
+                    font-size: 1.6em;
                     text-align: center;
-        
+                    font-family: $parrafo;
                 }
         
                 button { @include button; }

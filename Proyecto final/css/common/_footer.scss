@@ -1,0 +1,112 @@
+@import 'variables';
+
+footer.main-footer {
+    background-color: $color-light-transparent;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 40px,
+        black calc(100% - 40px),
+        transparent 100%
+    );
+    margin-top: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    color: $color-dark;
+    font-family: $parrafo;
+    font-size: 1.2em;
+
+    section {
+        @include respond-to(small_medium) {
+            flex-direction: column;
+        }
+        display: flex;
+        justify-content: space-between;
+
+        article {
+            @include respond-to(small_medium) { margin-top: 20px; }
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                font-family: $parrafo;
+                padding: 10px;
+                width: 100%;
+                font-size: 1.3em;
+                text-align: center;
+                background-color: $color-light-transparent;
+                mask-image: linear-gradient(
+                    to right,
+                    transparent 0%,
+                    black 15%,
+                    black 85%,
+                    transparent 100%
+                );
+            }
+            
+            ul { 
+                list-style-type: none; 
+                flex: 1;
+                display: flex;
+                padding: 20px;
+            }
+
+            a { 
+                font-family: $parrafo;
+                color: $color-dark; 
+            }
+        }
+
+        .footer-sitemap, .footer-info {
+            ul { 
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+
+                p { font-family: $parrafo; }
+            }
+        }
+
+        .footer-social {
+            ul {
+                width: 100%;
+                align-items: center;
+                justify-content: space-evenly;
+
+                a i {
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+        hr {
+            @include respond-to(small_medium) { display: none;}
+            margin: 0 40px;
+            border: 2px solid $color-dark-transparent;
+            border-radius: 10px;
+        }
+    }
+
+    .footer-policy small {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        
+        a { 
+            color: $color-dark; 
+            font-family: $parrafo;
+        }
+    }
+
+    .footer-copy {
+        text-align: center;
+        
+        p, strong { font-family: $parrafo; }
+    }
+}

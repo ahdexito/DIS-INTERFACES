@@ -1,10 +1,10 @@
 @import '../common/base';
 @import '../common/variables';
 @import '../common/mixins';
-@import '../common/feed-card';
 @import '../common/header';
 @import '../common/nav';
 @import '../common/aside';
+@import '../common/course-card';
 @import '../common/footer';
 
 // =========================================================
@@ -25,11 +25,11 @@ body {
         gap: 30px;
         align-items: flex-start;
         justify-content: center;
-        
+
         // =========================================================
-        // SECTION / FEED
+        // SERVICES
         // =========================================================
-        section.feed {
+        .services {
             width: 100%;
             max-width: 1200px;
             background: linear-gradient(
@@ -42,7 +42,7 @@ body {
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 60px 20px 0;
+            padding: 60px 20px 40px;
             mask-image: linear-gradient(
                 to bottom,
                 transparent 0%,
@@ -51,8 +51,8 @@ body {
                 transparent 100%
             );
 
-            // SECTION HEADER
-            .section-header {
+            // SERVICES HEADER
+            .services-header {
                 @include respond-to(small_medium) { 
                     flex-direction: column; 
                     align-items: flex-start;
@@ -73,42 +73,19 @@ body {
                     text-shadow: $color-dark 3px 3px 0;
                 }
 
-                // SECTION HEADER BUTTONS
-                .section-btns {
+                input {
                     @include respond-to(small_medium) { 
                         width: 100%; 
                         order: 3; 
                         margin-top: 10px;
                         margin-bottom: 50px;
                     }
-                    display: flex;
-                    justify-content: end;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                    font-size: 0.8em;
-
-                    .btn-filter, .btn-order {
-                        width: 120px;
-                        color: $color-dark;
-                        background-color: $color-light;
-                        padding: 10px;
-                        border: 3px solid $color-dark;
-                        border-radius: 50px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        text-decoration: none;
-                        font-weight: bold;
-                        transition: all 0.2s ease;
-    
-                        p { font-family: $parrafo; }
-
-                        &:hover {
-                            transform: scale(1.05);
-                            background-color: $color-dark;
-                            color: $color-light;
-                        }
-                    }
+                    background-color: $color-light;
+                    padding: 10px;
+                    border: 3px solid $color-dark;
+                    border-radius: 20px;
+                    width: 40%;
+                    font-size: 1em;
                 }
 
                 hr {
@@ -123,14 +100,15 @@ body {
                     box-shadow: $color-dark 3px 3px 0;
                 }
             }
-        }
 
-        .hr-feed {
-            width: 100%;
-            border: 3px solid $color-light;
-            border-radius: 10px;
-            margin: 50px 0;
-            box-shadow: $color-dark 3px 3px 0;
+            // SERVICES BODY
+            .services-body {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 40px;
+                padding-bottom: 40px;
+            }
         }
 
         .btn-up {

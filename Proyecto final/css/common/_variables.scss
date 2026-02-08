@@ -1,15 +1,15 @@
-$color-primary: #7c78b8;
-$color-primary-darken: darken($color-primary, $amount: 5);
-$color-accent: #ca305e;
-$color-accent-light: #df9aaf;
-$color-dark: #162452;
-$color-light: #ffffff;
-$color-aside: #5e5183;
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+$titulo: 'Fascinate';
+$parrafo: 'SN Pro';
 
-$color-primary-transparent: #7c78b8a8;
-$color-accent-light-transparent: #df9aafbe;
-$color-accent-transparent: #ca305e79;
-$color-dark-transparent: #241c30e0;
+$color-primary: #b61e4c;
+$color-accent: #9c66cf;
+$color-accent-light: #ffb5cb;
+$color-dark: #163161;
+$color-light: #f5f5ff;
+
+$color-primary-transparent: #b61e4cb9;
+$color-accent-transparent: #6e288fe8;
+$color-dark-transparent: #1024478e;
 $color-light-transparent: #ffffff62;
-$color-aside-transparent: #837151e0;
