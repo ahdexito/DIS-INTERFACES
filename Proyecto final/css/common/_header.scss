@@ -1,13 +1,14 @@
 @import 'variables';
 
 header.body-header {
-    background: 
-        linear-gradient(
-            160deg, 
-            $color-primary-transparent,
-            $color-accent-transparent,
-            $color-dark,
-        );
+    background: linear-gradient(
+        160deg, 
+        $color-accent-light-transparent,
+        $color-primary-transparent,
+        $color-accent-transparent,
+        $color-dark
+    );
+    box-shadow: $color-dark-transparent 0 0 10px 5px;
     border-radius: 100px;
     padding: 10px 20px;
     padding-right: 10px;
@@ -69,7 +70,7 @@ header.body-header {
                 margin-right: 5px;
                 width: 90px;
                 border-radius: 100px;
-                box-shadow: darken($color-dark, $amount: 20) 0 0 20px 5px;
+                box-shadow: #000 0 0 20px 5px;
             }
         }
     }

@@ -6,7 +6,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-light-transparent;
+    background: linear-gradient(
+        to right,
+        $color-accent-transparent,
+        $color-light-transparent,
+        $color-light-transparent,
+        $color-accent-transparent
+    );
     mask-image: linear-gradient(
         to right,
         transparent 0%,
@@ -25,27 +31,33 @@ nav {
 
         li {
             a {
-                color: $color-dark;
+                color: $color-light;
                 text-decoration: none;
-                font-weight: bold;
-                background-color: $color-light;
+                background: linear-gradient(
+                    to right,
+                    $color-dark 0%,
+                    $color-accent-transparent 50%,
+                    $color-primary 51%,
+                    $color-accent-light 100%
+                );
+                background-size: 210% 100%;
+                background-position: left center;
                 padding: 12px 10px;
                 display: flex;
                 align-items: center;
                 gap: 5px;
-                border: 3px solid $color-dark;
                 border-radius: 30px;
-                transition: all 0.2s ease;
+                border: 2px solid $color-light;
+                box-shadow: $color-dark 0 0 10px;
+                transition: all 0.3s ease;
 
-                &:hover {
-                    color: $color-light;
-                    background-color: $color-dark;
+                &:hover, &:has(.selected) {
+                    background-position: right center;
                     transform: scale(1.1);
                 }
 
                 &:active { 
-                    background-color: $color-primary; 
-                    border-color: $color-primary;
+                    transform: scale(0.95);
                 }
 
                 p {

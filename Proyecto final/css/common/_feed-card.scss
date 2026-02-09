@@ -40,7 +40,7 @@ section.feed article {
             img {
                 width: 90px;
                 border-radius: 100px;
-                box-shadow: darken($color-dark, $amount: 20) 0 0 20px 5px;
+                box-shadow: #000 0 0 20px 5px;
             }
 
             .user-info {
@@ -107,10 +107,10 @@ section.feed article {
             background:
                 linear-gradient(
                     160deg,
-                    darken($color-primary, $amount: 10),
-                    $color-primary,
-                    $color-primary,
-                    darken($color-primary, $amount: 10)
+                    $color-accent-light-transparent,
+                    $color-primary-transparent,
+                    $color-accent-transparent,
+                    $color-dark-transparent
                 );
             padding: 40px 20px;
             border-radius: 40px;
@@ -250,6 +250,7 @@ section.feed article {
             border: 3px solid $color-dark;
             border-radius: 10px;
             color: $color-dark;
+            box-shadow: $color-dark 2px 2px;
             font-size: 1em;
             font-weight: bold;
             transition: all 0.1s linear;
@@ -260,6 +261,7 @@ section.feed article {
                 color: $color-light;
                 border: 3px solid $color-light;
                 transform: scale(1.05);
+                box-shadow: $color-light 3px 3px;
             }
         }
     }

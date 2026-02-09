@@ -1,5 +1,14 @@
 @import 'variables';
 
+@keyframes animarFondo {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
 aside.main-aside {  
     @include respond-to(small_medium) { display: none; }
     background: linear-gradient(
@@ -18,7 +27,7 @@ aside.main-aside {
     );
     width: 360px;
     padding: 100px 30px;
-    height: fit-content;
+    height: 95vh;
     position: sticky;
     top: 20px;
 
@@ -48,7 +57,20 @@ aside.main-aside {
 
             a, p {
                 background-color: $color-light;
-                color: $color-dark;
+                color: $color-light;
+                text-shadow: $color-dark 3px 3px;
+                background: linear-gradient(
+                    160deg,
+                    $color-accent-transparent,
+                    $color-primary-transparent,
+                    #ff7d26be,
+                    $color-accent-transparent,
+                    $color-primary-transparent,
+                    #ff7d26be
+                );
+                background-size: 300% 100%;
+                background-position: 250% 50%;
+                transition: transform 0.2s ease, background-position 0.5s ease;
                 font-size: 1.5em;
                 font-weight: bold;
                 text-decoration: none;
@@ -58,17 +80,16 @@ aside.main-aside {
                 justify-content: space-between;
                 gap: 30px;
                 padding: 10px;
-                border: 3px solid $color-dark;
+                border: 3px solid $color-light;
+                box-shadow: $color-dark 3px 3px 0;
                 border-radius: 10px;
-                transition: transform 0.2s ease;
             }
 
             p { cursor: default; }
 
             &:hover > a, &:hover > p {
-                background-color: $color-dark;
-                color: $color-light;
                 transform: scale(1.05);
+                animation: animarFondo 2s linear infinite;
             }
         } 
         
@@ -76,28 +97,46 @@ aside.main-aside {
             position: relative;
 
             .submenu {
+                background: linear-gradient(
+                    160deg,
+                    $color-dark-transparent,
+                    $color-accent-transparent,
+                    $color-primary-transparent
+                );
+                border: 3px solid $color-light;
+                box-shadow: $color-dark 3px 3px 0;
                 display: flex; 
                 flex-direction: column;
-                gap: 5px;
+                gap: 10px;
                 max-height: 0;
                 opacity: 0;
                 overflow: hidden;
                 padding: 0 10px;
                 margin: 0 10px;
-                background-color: $color-dark-transparent;
                 border-radius: 0 0 10px 10px;
                 transition: max-height 0.5s ease-in, opacity 0.2s ease, padding 0.2s ease;
 
                 li {
                     a { 
+                        background: $color-light;
+                        border-color: $color-dark;
+                        color: $color-dark;
+                        text-shadow: none;
                         display: block;
                         font-size: 1.2em; 
 
                         &:hover {
-                            background-color: $color-primary;
-                            border-color: $color-light;
+                            color: $color-light;
+                            text-shadow: $color-dark 2px 2px;
+                            transform: scale(1.02);
+                            box-shadow: $color-dark 5px 5px;
                         }
                     }
+
+                    &:nth-child(1) a:hover { background: $color-primary; }
+                    &:nth-child(2) a:hover { background-color: $color-accent; }
+                    &:nth-child(3) a:hover { background-color: $color-accent-light; }
+                    &:nth-child(4) a:hover { background-color: lighten($color-dark, $amount: 30); }
                 }
             }
 
