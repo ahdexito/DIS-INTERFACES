@@ -12,7 +12,7 @@
 header.body-header {
     box-shadow: $color-dark-transparent 0 0 10px 5px;
     border-radius: 100px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     padding-right: 10px;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ header.body-header {
     
     a.btn-index {
         @include respond-to(small) {
-            background-size: 600% 100%;
+            background-size: 650% 100%;
         }
         display: flex;
         align-items: center;
@@ -41,7 +41,7 @@ header.body-header {
             $color-primary-transparent,
             #ff7d26be
         );
-        background-size: 350% 100%;
+        background-size: 370% 100%;
         background-position: 250% 50%;
         animation: animarFondo 3s linear infinite;
 
@@ -58,7 +58,7 @@ header.body-header {
         }
 
         h1 {
-            @include respond-to(small) { display: none; }
+            @include respond-to(small_medium) { display: none; }
             
             color: $color-light;
             font-size: 3em;
@@ -74,7 +74,7 @@ header.body-header {
         color: $color-light;
 
         p {
-            @include respond-to(small_medium) { display: none; }
+            @include respond-to(small) { display: none; }
 
             text-align: end;
             font-size: 1.3em;

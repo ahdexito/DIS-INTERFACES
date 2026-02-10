@@ -140,7 +140,7 @@ html body main form div.register-footer a:hover {
   transform: scale(0.98);
 }
 html body main form div.register-footer a:hover {
-  background-color: #b61e4c;
+  background-color: #cc2a5a;
 }
 html body main form button {
   width: 100%;
@@ -209,5 +209,5 @@ html body main .registrarse button:hover {
   transform: scale(0.98);
 }
 html body main .registrarse button:hover {
-  background-color: #b61e4c;
+  background-color: #cc2a5a;
 }/*# sourceMappingURL=login.css.map */

@@ -1,9 +1,5 @@
 @import 'variables';
 
-@mixin box-shadow {
-    box-shadow: #00000065 0 0 10px 10px;
-}
-
 section.feed article {
     background: linear-gradient(
         $color-dark 0,
@@ -11,17 +7,22 @@ section.feed article {
         $color-dark-transparent
     );
     padding: 20px;
-    border: 5px solid $color-light;
+    border: 5px solid $color-dark;
+    box-shadow: $color-dark 5px 5px;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
+    &:nth-of-type(4n + 1) { --article-color: #{$color-primary}; }
+    &:nth-of-type(4n + 2) { --article-color: #{$color-accent-light}; }
+    &:nth-of-type(4n + 3) { --article-color: #{$color-accent}; }
+    &:nth-of-type(4n + 4) { --article-color: #{lighten($color-dark, 30%)}; }
+
     // =========================================================
     // ARTICLE HEADER
     // =========================================================
     header.article-header {
-        border-radius: 55px;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -52,7 +53,7 @@ section.feed article {
                 strong {
                     font-size: 1.2em;
                     font-weight: bold;
-                    color: $color-accent-light;
+                    color: var(--article-color);
                 }
             }
         }
@@ -75,7 +76,7 @@ section.feed article {
             margin-left: auto;
 
             strong { 
-                color: $color-accent-light; 
+                color: var(--article-color); 
                 gap: 10px;
             }
 
@@ -93,39 +94,34 @@ section.feed article {
     // ARTICLE BODY
     // =========================================================
     section.article-body {
+        padding: 30px;
         color: $color-light;
         display: flex;
-        flex-direction: column;
         gap: 30px;
+        flex-direction: column;
+        background-color: var(--article-color);
+        border: 5px solid $color-dark;
+        box-shadow: $color-dark 5px 5px;
+        border-radius: 40px;
+        color: $color-light;
 
         // ARTICLE BODY TITLE
         header.article-body-title {
             @include respond-to(small) { font-size: 0.7em; }
-            @include box-shadow;
+            
             display: flex;
             flex-direction: column;
             gap: 10px;
-            background:
-                linear-gradient(
-                    160deg,
-                    $color-accent-light-transparent,
-                    $color-primary-transparent,
-                    $color-accent-transparent
-                );
-            padding: 40px 20px;
-            border-radius: 40px;
 
             h3 { 
                 font-family: $titulo;
                 font-size: 2.2em; 
-                color: $color-light;
                 text-shadow: $color-dark 3px 3px 0;
             }
 
             h4 { 
                 width: 100%;
                 font-size: 2em; 
-                color: $color-accent-light;
                 text-shadow: $color-dark 3px 3px 0;
             }
 
@@ -135,12 +131,13 @@ section.feed article {
         // ARTICLE BODY CONTENT
         div.article-body-content {
             @include respond-to(small) { font-size: 0.7em; }
-            @include box-shadow;
             display: block;
             overflow: hidden;
             background-color: $color-light;
             color: $color-dark;
             border-radius: 40px;
+            border: 5px solid $color-dark;
+            box-shadow: $color-dark 5px 5px;
 
             img {
                 @include respond-to(small) {

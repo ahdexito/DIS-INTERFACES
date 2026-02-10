@@ -73,14 +73,26 @@ html {
 section.feed article {
   background: linear-gradient(#163161 0, rgba(16, 36, 71, 0.5568627451) 300px, rgba(16, 36, 71, 0.5568627451));
   padding: 20px;
-  border: 5px solid #f5f5ff;
+  border: 5px solid #163161;
+  box-shadow: #163161 5px 5px;
   border-radius: 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+section.feed article:nth-of-type(4n + 1) {
+  --article-color: #cc2a5a;
+}
+section.feed article:nth-of-type(4n + 2) {
+  --article-color: #ff9147;
+}
+section.feed article:nth-of-type(4n + 3) {
+  --article-color: #9c66cf;
+}
+section.feed article:nth-of-type(4n + 4) {
+  --article-color: #3d73d3;
+}
 section.feed article header.article-header {
-  border-radius: 55px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -113,7 +125,7 @@ section.feed article header.article-header .article-header-user .user-info {
 section.feed article header.article-header .article-header-user .user-info strong {
   font-size: 1.2em;
   font-weight: bold;
-  color: #ff9147;
+  color: var(--article-color);
 }
 section.feed article header.article-header .article-header-date {
   display: flex;
@@ -134,7 +146,7 @@ section.feed article header.article-header .article-header-date {
   }
 }
 section.feed article header.article-header .article-header-date strong {
-  color: #ff9147;
+  color: var(--article-color);
   gap: 10px;
 }
 section.feed article header.article-header .article-header-date p {
@@ -146,19 +158,21 @@ section.feed article header.article-header .article-header-date i {
   margin-left: 10px;
 }
 section.feed article section.article-body {
+  padding: 30px;
   color: #f5f5ff;
   display: flex;
-  flex-direction: column;
   gap: 30px;
+  flex-direction: column;
+  background-color: var(--article-color);
+  border: 5px solid #163161;
+  box-shadow: #163161 5px 5px;
+  border-radius: 40px;
+  color: #f5f5ff;
 }
 section.feed article section.article-body header.article-body-title {
-  box-shadow: rgba(0, 0, 0, 0.3960784314) 0 0 10px 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: linear-gradient(160deg, rgba(255, 145, 71, 0.5960784314), rgba(182, 30, 76, 0.7254901961), rgba(110, 40, 143, 0.9098039216));
-  padding: 40px 20px;
-  border-radius: 40px;
 }
 @media (max-width: 600px) {
   section.feed article section.article-body header.article-body-title {
@@ -168,25 +182,24 @@ section.feed article section.article-body header.article-body-title {
 section.feed article section.article-body header.article-body-title h3 {
   font-family: "Fascinate";
   font-size: 2.2em;
-  color: #f5f5ff;
   text-shadow: #163161 3px 3px 0;
 }
 section.feed article section.article-body header.article-body-title h4 {
   width: 100%;
   font-size: 2em;
-  color: #ff9147;
   text-shadow: #163161 3px 3px 0;
 }
 section.feed article section.article-body header.article-body-title p {
   font-size: 1.5em;
 }
 section.feed article section.article-body div.article-body-content {
-  box-shadow: rgba(0, 0, 0, 0.3960784314) 0 0 10px 10px;
   display: block;
   overflow: hidden;
   background-color: #f5f5ff;
   color: #163161;
   border-radius: 40px;
+  border: 5px solid #163161;
+  box-shadow: #163161 5px 5px;
 }
 @media (max-width: 600px) {
   section.feed article section.article-body div.article-body-content {
@@ -283,7 +296,7 @@ section.feed article footer.article-footer .vote-btns button:hover {
   text-shadow: #163161 2px 2px;
 }
 section.feed article footer.article-footer .vote-btns button:nth-child(4n+1):hover {
-  background-color: #b61e4c;
+  background-color: #cc2a5a;
 }
 section.feed article footer.article-footer .vote-btns button:nth-child(4n+2):hover {
   background-color: #ff9147;
@@ -305,7 +318,7 @@ section.feed article footer.article-footer button.vote-confirm {
   font-size: 1em;
   font-weight: bold;
   transition: all 0.2s ease;
-  background: linear-gradient(to right, #163161 0%, rgba(110, 40, 143, 0.9098039216) 50%, #b61e4c 51%, #ff9147 100%);
+  background: linear-gradient(to right, #163161 0%, rgba(110, 40, 143, 0.9098039216) 50%, #cc2a5a 51%, #ff9147 100%);
   background-size: 210% 100%;
   background-position: left center;
 }
@@ -331,7 +344,7 @@ section.feed article footer.article-footer button.vote-confirm:hover {
 header.body-header {
   box-shadow: rgba(16, 36, 71, 0.5568627451) 0 0 10px 5px;
   border-radius: 100px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   padding-right: 10px;
   display: flex;
   align-items: center;
@@ -349,13 +362,13 @@ header.body-header a.btn-index {
   box-shadow: #163161 3px 3px;
   border-radius: 100px;
   background: linear-gradient(160deg, rgba(110, 40, 143, 0.9098039216), rgba(182, 30, 76, 0.7254901961), rgba(255, 125, 38, 0.7450980392), rgba(110, 40, 143, 0.9098039216), rgba(182, 30, 76, 0.7254901961), rgba(255, 125, 38, 0.7450980392));
-  background-size: 350% 100%;
+  background-size: 370% 100%;
   background-position: 250% 50%;
   animation: animarFondo 3s linear infinite;
 }
 @media (max-width: 600px) {
   header.body-header a.btn-index {
-    background-size: 600% 100%;
+    background-size: 650% 100%;
   }
 }
 header.body-header a.btn-index:hover {
@@ -374,7 +387,7 @@ header.body-header a.btn-index h1 {
   font-family: "Fascinate";
   margin-right: 30px;
 }
-@media (max-width: 600px) {
+@media (max-width: 950px) {
   header.body-header a.btn-index h1 {
     display: none;
   }
@@ -391,7 +404,7 @@ header.body-header .user p {
   text-shadow: #163161 2px 2px 0px;
   font-weight: bold;
 }
-@media (max-width: 950px) {
+@media (max-width: 600px) {
   header.body-header .user p {
     display: none;
   }
@@ -440,7 +453,7 @@ nav.main-nav ul {
 nav.main-nav ul li a {
   color: #f5f5ff;
   text-decoration: none;
-  background: linear-gradient(to right, #163161 0%, rgba(110, 40, 143, 0.9098039216) 50%, #b61e4c 51%, #ff9147 100%);
+  background: linear-gradient(to right, #163161 0%, rgba(110, 40, 143, 0.9098039216) 50%, #cc2a5a 51%, #ff9147 100%);
   background-size: 210% 100%;
   background-position: left center;
   padding: 12px 10px;
@@ -448,7 +461,7 @@ nav.main-nav ul li a {
   align-items: center;
   gap: 5px;
   border-radius: 30px;
-  border: 2px solid #f5f5ff;
+  border: 3px solid #f5f5ff;
   box-shadow: #163161 0 0 10px;
   transition: all 0.3s ease;
 }
@@ -515,7 +528,7 @@ aside.main-aside ul li {
   position: relative;
 }
 aside.main-aside ul li:nth-child(4n+1) {
-  --item-color: #b61e4c;
+  --item-color: #cc2a5a;
 }
 aside.main-aside ul li:nth-child(4n+2) {
   --item-color: #ff9147;
@@ -572,7 +585,7 @@ aside.main-aside ul .has-dropdown .submenu {
   transition: max-height 0.5s ease-in, opacity 0.2s ease, padding 0.2s ease;
 }
 aside.main-aside ul .has-dropdown .submenu li:nth-child(4n+1) {
-  --item-color: #b61e4c;
+  --item-color: #cc2a5a;
 }
 aside.main-aside ul .has-dropdown .submenu li:nth-child(4n+2) {
   --item-color: #ff9147;
@@ -793,7 +806,7 @@ body main section.feed .section-header .section-btns .btn-filter:hover, body mai
   box-shadow: #163161 3px 3px;
 }
 body main section.feed .section-header .section-btns .btn-order:hover {
-  background-color: #b61e4c;
+  background-color: #cc2a5a;
 }
 body main section.feed .section-header hr {
   width: 100%;

@@ -3,34 +3,20 @@
 section.services-body article {
     width: 380px;
     background: linear-gradient(
-        $color-dark-transparent,
-        $color-accent-transparent
+        $color-dark,
+        $color-dark-transparent
     );
     padding: 10px;
+    border: 5px solid $color-dark;
+    box-shadow: $color-dark 5px 5px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
 
-    &:nth-child(4n + 1) {
-        .article-header {
-            background-color: $color-primary; 
-        } 
-    }
-    &:nth-child(4n + 2) { 
-        .article-header { 
-            background-color: $color-accent-light; 
-        } 
-    }
-    &:nth-child(4n + 3) { 
-        .article-header { 
-            background-color: $color-accent; 
-        } 
-    }
-    &:nth-child(4n + 4) { 
-        .article-header { 
-            background-color: lighten($color-dark, $amount: 30); 
-        } 
-    }
+    &:nth-child(4n + 1) { .article-header { background-color: $color-primary; }}
+    &:nth-child(4n + 2) { .article-header { background-color: $color-accent-light; }}
+    &:nth-child(4n + 3) { .article-header { background-color: $color-accent; }}
+    &:nth-child(4n + 4) { .article-header { background-color: lighten($color-dark, $amount: 30); }}
 
     .article-header {
         padding: 15px;
