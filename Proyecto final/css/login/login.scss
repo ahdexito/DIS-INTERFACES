@@ -7,6 +7,9 @@
     border: none;
     border-radius: 25px;
     font-size: 1.1em;
+    border: 3px solid $color-dark;
+    color: $color-dark;
+    box-shadow: $color-dark 3px 3px;
 }
 
 @mixin button {

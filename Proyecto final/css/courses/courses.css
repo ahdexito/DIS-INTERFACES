@@ -27,38 +27,49 @@ html {
 }
 
 .menu-button {
-  display: none;
-  transition: right 0.4s ease;
+  display: flex;
+  position: sticky;
+  top: 20px;
+  right: 10px;
+  border: 3px solid #163161;
+  z-index: 101;
+  background-color: #f5f5ff;
+  color: #163161;
+  font-size: 2em;
+  padding: 7px 4px;
+  margin-left: 40px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: #163161 3px 3px 0;
+  transition: all 0.3s ease;
 }
 @media (max-width: 950px) {
   .menu-button {
-    display: flex;
-    position: fixed;
-    top: 163px;
-    right: 0;
-    z-index: 101;
-    background-color: #f5f5ff;
-    color: #163161;
-    border: 3px solid #163161;
-    border-right: none;
-    font-size: 2em;
-    padding: 7px 4px;
     border-radius: 10px 0 0 10px;
-    cursor: pointer;
-    box-shadow: #163161 3px 3px 0;
-    transition: all 0.2s ease;
-  }
-  .menu-button:hover {
-    transform: scale(1.1);
-    background-color: #ff9147;
-    text-shadow: #f5f5ff 3px 3px;
-    box-shadow: #163161 5px 5px 0;
+    border-right: none;
+    top: 260px;
+    right: 0;
+    position: fixed;
+    margin: 0;
   }
 }
+.menu-button:hover {
+  transform: scale(1.1);
+  background-color: #ff9147;
+  text-shadow: #f5f5ff 3px 3px;
+  box-shadow: #163161 5px 5px 0;
+}
 
+.menu-checkbox:checked ~ aside.main-aside {
+  margin-right: -400px;
+  opacity: 0;
+}
 @media (max-width: 950px) {
   .menu-checkbox:checked ~ aside.main-aside {
     right: 0;
+    margin-right: 0;
+    opacity: 1;
   }
 }
 @media (max-width: 950px) {
@@ -103,7 +114,7 @@ header.body-header a.btn-index {
   background-position: 250% 50%;
   animation: animarFondo 3s linear infinite;
 }
-@media (max-width: 600px) {
+@media (max-width: 950px) {
   header.body-header a.btn-index {
     background-size: 650% 100%;
   }
@@ -217,14 +228,16 @@ nav.main-nav ul li a:active {
 }
 
 aside.main-aside {
-  background: linear-gradient(to bottom, rgba(110, 40, 143, 0.9098039216), rgba(255, 255, 255, 0.3843137255) 150px, rgba(255, 255, 255, 0.3843137255) calc(100% - 150px), rgba(110, 40, 143, 0.9098039216));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
-          mask-image: linear-gradient(to bottom, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
   width: 360px;
   padding: 100px 30px;
   height: 95vh;
   position: sticky;
   top: 20px;
+  right: 0;
+  transition: all 0.4s ease;
+  background: linear-gradient(to bottom, rgba(110, 40, 143, 0.9098039216), rgba(255, 255, 255, 0.3843137255) 150px, rgba(255, 255, 255, 0.3843137255) calc(100% - 150px), rgba(110, 40, 143, 0.9098039216));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
 }
 @media (max-width: 950px) {
   aside.main-aside {
@@ -235,11 +248,10 @@ aside.main-aside {
     max-width: 80%;
     height: 100vh;
     z-index: 100;
-    transition: left 0.4s ease;
+    transition: all 0.4s ease;
     padding-top: 80px;
     border-left: 2px solid #f5f5ff;
-    transition: right 0.4s ease;
-    background: linear-gradient(to bottom, #9c66cf, #163161, #163161, #9c66cf);
+    background: linear-gradient(to bottom, #163161, #9c66cf, #9c66cf, #163161);
   }
 }
 aside.main-aside h3 {
@@ -302,12 +314,15 @@ aside.main-aside ul li:hover > a, aside.main-aside ul li:hover > p {
   color: #f5f5ff;
   text-shadow: #163161 3px 3px;
 }
+aside.main-aside ul li:hover > p {
+  margin-bottom: 5px;
+}
 aside.main-aside ul .has-dropdown {
   position: relative;
 }
 aside.main-aside ul .has-dropdown .submenu {
-  background: linear-gradient(160deg, rgba(110, 40, 143, 0.9098039216), rgba(182, 30, 76, 0.7254901961));
-  border: 3px solid #f5f5ff;
+  background-color: rgba(16, 36, 71, 0.5568627451);
+  border: 3px solid #163161;
   border-top: none;
   box-shadow: #163161 3px 3px 0;
   display: flex;
@@ -532,7 +547,6 @@ body {
 }
 body main {
   display: flex;
-  gap: 30px;
   align-items: flex-start;
   justify-content: center;
 }

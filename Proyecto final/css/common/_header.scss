@@ -21,9 +21,6 @@ header.body-header {
     background-color: $color-light-transparent;
     
     a.btn-index {
-        @include respond-to(small) {
-            background-size: 650% 100%;
-        }
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,6 +41,10 @@ header.body-header {
         background-size: 370% 100%;
         background-position: 250% 50%;
         animation: animarFondo 3s linear infinite;
+
+        @include respond-to(small_medium) {
+            background-size: 650% 100%;
+        }
 
         &:hover { 
             transform: scale(1.05); 

@@ -96,6 +96,9 @@ html body main form input {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
 }
 html body main form .recuerdame {
   display: flex;
@@ -120,6 +123,9 @@ html body main form div.register-footer a {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
@@ -148,6 +154,9 @@ html body main form button {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
@@ -192,6 +201,9 @@ html body main .registrarse button {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;

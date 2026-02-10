@@ -1,6 +1,14 @@
 @import 'variables';
 
 aside.main-aside {  
+    width: 360px;
+    padding: 100px 30px;
+    height: 95vh;
+    position: sticky;
+    top: 20px;
+    right: 0;
+    transition: all 0.4s ease;
+
     @include respond-to(small_medium) {
         position: fixed;
         top: 0;
@@ -9,16 +17,15 @@ aside.main-aside {
         max-width: 80%;
         height: 100vh;
         z-index: 100;
-        transition: left 0.4s ease;
+        transition: all 0.4s ease;
         padding-top: 80px;
         border-left: 2px solid $color-light;
-        transition: right 0.4s ease;
         background: linear-gradient(
             to bottom,
+            $color-dark,
             $color-accent,
-            $color-dark,
-            $color-dark,
-            $color-accent
+            $color-accent,
+            $color-dark
         );
     }
 
@@ -29,6 +36,7 @@ aside.main-aside {
         $color-light-transparent calc(100% - 150px),
         $color-accent-transparent
     );
+
     mask-image: linear-gradient(
         to bottom,
         transparent 0%,
@@ -36,11 +44,6 @@ aside.main-aside {
         black calc(100% - 40px),
         transparent 100%
     );
-    width: 360px;
-    padding: 100px 30px;
-    height: 95vh;
-    position: sticky;
-    top: 20px;
 
     h3 {
         color: $color-light;
@@ -95,20 +98,18 @@ aside.main-aside {
                 transform: scale(1.05);
                 background-color: var(--item-color);
                 color: $color-light;
-                    text-shadow: $color-dark 3px 3px;
+                text-shadow: $color-dark 3px 3px;
             }
+
+            &:hover > p { margin-bottom: 5px; }
         }
         
         .has-dropdown {
             position: relative;
 
             .submenu {
-                background: linear-gradient(
-                    160deg,
-                    $color-accent-transparent,
-                    $color-primary-transparent
-                );
-                border: 3px solid $color-light;
+                background-color: $color-dark-transparent;
+                border: 3px solid $color-dark;
                 border-top: none;
                 box-shadow: $color-dark 3px 3px 0;
                 display: flex; 
