@@ -1,16 +1,27 @@
 @import 'variables';
 
-@keyframes animarFondo {
-    from {
-        background-position: 0% 50%;
-    }
-    to {
-        background-position: 100% 50%;
-    }
-}
-
 aside.main-aside {  
-    @include respond-to(small_medium) { display: none; }
+    @include respond-to(small_medium) {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        left: auto;
+        max-width: 80%;
+        height: 100vh;
+        z-index: 100;
+        transition: left 0.4s ease;
+        padding-top: 80px;
+        border-left: 2px solid $color-light;
+        transition: right 0.4s ease;
+        background: linear-gradient(
+            to bottom,
+            $color-accent,
+            $color-dark,
+            $color-dark,
+            $color-accent
+        );
+    }
+
     background: linear-gradient(
         to bottom,
         $color-accent-transparent,
@@ -55,22 +66,15 @@ aside.main-aside {
         li {
             position: relative;
 
+            &:nth-child(4n + 1) { --item-color: #{$color-primary}; }
+            &:nth-child(4n + 2) { --item-color: #{$color-accent-light}; }
+            &:nth-child(4n + 3) { --item-color: #{$color-accent}; }
+            &:nth-child(4n + 4) { --item-color: #{lighten($color-dark, 30%)}; }
+
             a, p {
                 background-color: $color-light;
-                color: $color-light;
-                text-shadow: $color-dark 3px 3px;
-                background: linear-gradient(
-                    160deg,
-                    $color-accent-transparent,
-                    $color-primary-transparent,
-                    #ff7d26be,
-                    $color-accent-transparent,
-                    $color-primary-transparent,
-                    #ff7d26be
-                );
-                background-size: 300% 100%;
-                background-position: 250% 50%;
-                transition: transform 0.2s ease, background-position 0.5s ease;
+                color: $color-dark;
+                transition: all 0.2s ease;
                 font-size: 1.5em;
                 font-weight: bold;
                 text-decoration: none;
@@ -80,8 +84,8 @@ aside.main-aside {
                 justify-content: space-between;
                 gap: 30px;
                 padding: 10px;
-                border: 3px solid $color-light;
-                box-shadow: $color-dark 3px 3px 0;
+                border: 3px solid $color-dark;
+                box-shadow: $color-dark 4px 4px 0;
                 border-radius: 10px;
             }
 
@@ -89,9 +93,11 @@ aside.main-aside {
 
             &:hover > a, &:hover > p {
                 transform: scale(1.05);
-                animation: animarFondo 2s linear infinite;
+                background-color: var(--item-color);
+                color: $color-light;
+                    text-shadow: $color-dark 3px 3px;
             }
-        } 
+        }
         
         .has-dropdown {
             position: relative;
@@ -99,11 +105,11 @@ aside.main-aside {
             .submenu {
                 background: linear-gradient(
                     160deg,
-                    $color-dark-transparent,
                     $color-accent-transparent,
                     $color-primary-transparent
                 );
                 border: 3px solid $color-light;
+                border-top: none;
                 box-shadow: $color-dark 3px 3px 0;
                 display: flex; 
                 flex-direction: column;
@@ -117,8 +123,13 @@ aside.main-aside {
                 transition: max-height 0.5s ease-in, opacity 0.2s ease, padding 0.2s ease;
 
                 li {
+                    &:nth-child(4n + 1) { --item-color: #{$color-primary}; }
+                    &:nth-child(4n + 2) { --item-color: #{$color-accent-light}; }
+                    &:nth-child(4n + 3) { --item-color: #{$color-accent}; }
+                    &:nth-child(4n + 4) { --item-color: #{lighten($color-dark, 30%)}; }
+
                     a { 
-                        background: $color-light;
+                        background-color: $color-light;
                         border-color: $color-dark;
                         color: $color-dark;
                         text-shadow: none;
@@ -128,15 +139,11 @@ aside.main-aside {
                         &:hover {
                             color: $color-light;
                             text-shadow: $color-dark 2px 2px;
-                            transform: scale(1.02);
+                            transform: scale(1.05);
                             box-shadow: $color-dark 5px 5px;
+                            background-color: var(--item-color);
                         }
                     }
-
-                    &:nth-child(1) a:hover { background: $color-primary; }
-                    &:nth-child(2) a:hover { background-color: $color-accent; }
-                    &:nth-child(3) a:hover { background-color: $color-accent-light; }
-                    &:nth-child(4) a:hover { background-color: lighten($color-dark, $amount: 30); }
                 }
             }
 

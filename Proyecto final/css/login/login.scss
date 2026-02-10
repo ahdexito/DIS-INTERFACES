@@ -11,15 +11,20 @@
 
 @mixin button {
     @include input;
+
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    background-color: $color-dark;
-    color: $color-light;
+    background-color: $color-light;
+    border: 3px solid $color-dark;
+    color: $color-dark;
+    box-shadow: $color-dark 3px 3px;
     transition: all 0.2s ease;
     &:hover {
-        background-color: $color-light;
-        color: $color-dark;
-        box-shadow: $color-dark 4px 5px;
+        background-color: $color-accent-light;
+        color: $color-light;
+        text-shadow: $color-dark 2px 2px;
+        box-shadow: $color-dark 5px 5px;
         transform: scale(0.98);
     }
 }
@@ -165,8 +170,10 @@ html {
                     a {
                         @include button;
                         flex: 0;
-                        background-color: $color-dark;
+                        background-color: $color-light;
                         padding: 15px 15px;
+
+                        &:hover { background-color: $color-primary; }
                     }
                 }
 
@@ -194,7 +201,11 @@ html {
                     font-family: $parrafo;
                 }
         
-                button { @include button; }
+                button { 
+                    @include button; 
+
+                    &:hover { background-color: $color-primary; }
+                }
             }
         }
     }

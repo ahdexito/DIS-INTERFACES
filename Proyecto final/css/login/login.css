@@ -120,20 +120,27 @@ html body main form div.register-footer a {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #163161;
-  color: #f5f5ff;
+  background-color: #f5f5ff;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   transition: all 0.2s ease;
   flex: 0;
-  background-color: #163161;
+  background-color: #f5f5ff;
   padding: 15px 15px;
 }
 html body main form div.register-footer a:hover {
-  background-color: #f5f5ff;
-  color: #163161;
-  box-shadow: #163161 4px 5px;
+  background-color: #ff9147;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+  box-shadow: #163161 5px 5px;
   transform: scale(0.98);
+}
+html body main form div.register-footer a:hover {
+  background-color: #b61e4c;
 }
 html body main form button {
   width: 100%;
@@ -141,16 +148,20 @@ html body main form button {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #163161;
-  color: #f5f5ff;
+  background-color: #f5f5ff;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   transition: all 0.2s ease;
 }
 html body main form button:hover {
-  background-color: #f5f5ff;
-  color: #163161;
-  box-shadow: #163161 4px 5px;
+  background-color: #ff9147;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+  box-shadow: #163161 5px 5px;
   transform: scale(0.98);
 }
 html body main hr {
@@ -181,15 +192,22 @@ html body main .registrarse button {
   border: none;
   border-radius: 25px;
   font-size: 1.1em;
+  border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #163161;
-  color: #f5f5ff;
+  background-color: #f5f5ff;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   transition: all 0.2s ease;
 }
 html body main .registrarse button:hover {
-  background-color: #f5f5ff;
-  color: #163161;
-  box-shadow: #163161 4px 5px;
+  background-color: #ff9147;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+  box-shadow: #163161 5px 5px;
   transform: scale(0.98);
+}
+html body main .registrarse button:hover {
+  background-color: #b61e4c;
 }/*# sourceMappingURL=login.css.map */

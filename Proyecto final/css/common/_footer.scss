@@ -97,6 +97,15 @@ footer.main-footer {
         display: flex;
         justify-content: center;
         gap: 2%;
+        margin: 20px;
+        background-color: $color-light-transparent;
+        mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 15%,
+            black 85%,
+            transparent 100%
+        );
         
         a { 
             color: $color-dark; 

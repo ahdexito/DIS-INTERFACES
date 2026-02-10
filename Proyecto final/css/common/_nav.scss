@@ -1,6 +1,6 @@
 @import 'variables';
 
-nav {
+nav.main-nav {
     margin: 20px 0;
     padding: 5px;
     display: flex;
@@ -54,6 +54,7 @@ nav {
                 &:hover, &:has(.selected) {
                     background-position: right center;
                     transform: scale(1.1);
+                    text-shadow: $color-dark 2px 2px;
                 }
 
                 &:active { 
@@ -61,8 +62,6 @@ nav {
                 }
 
                 p {
-                    font-family: $parrafo;
-
                     @include respond-to(small_medium) {
                         display: none;
                     }

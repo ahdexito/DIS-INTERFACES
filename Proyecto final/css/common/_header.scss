@@ -1,13 +1,15 @@
 @import 'variables';
 
+@keyframes animarFondo {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
 header.body-header {
-    background: linear-gradient(
-        160deg, 
-        $color-accent-light-transparent,
-        $color-primary-transparent,
-        $color-accent-transparent,
-        $color-dark
-    );
     box-shadow: $color-dark-transparent 0 0 10px 5px;
     border-radius: 100px;
     padding: 10px 20px;
@@ -16,26 +18,52 @@ header.body-header {
     align-items: center;
     justify-content: space-between;
     text-shadow: $color-dark 3px 3px 0;
+    background-color: $color-light-transparent;
     
     a.btn-index {
+        @include respond-to(small) {
+            background-size: 600% 100%;
+        }
         display: flex;
         align-items: center;
+        justify-content: center;
         text-decoration: none;
         transition: all 0.2s ease;
+        border: 3px solid $color-light;
+        box-shadow: $color-dark 3px 3px;
+        border-radius: 100px;
+        background: linear-gradient(
+            160deg,
+            $color-accent-transparent,
+            $color-primary-transparent,
+            #ff7d26be,
+            $color-accent-transparent,
+            $color-primary-transparent,
+            #ff7d26be
+        );
+        background-size: 350% 100%;
+        background-position: 250% 50%;
+        animation: animarFondo 3s linear infinite;
 
-        &:hover { transform: scale(1.05); }
+        &:hover { 
+            transform: scale(1.05); 
+            box-shadow: $color-dark 5px 5px;
+            animation: animarFondo 1s linear infinite;
+        }
 
         img {
-            @include respond-to(small) { display: none; }
-
+            padding: 10px;
             width: 90px;
-            margin-right: 10px;
+            margin: 10px;
         }
 
         h1 {
+            @include respond-to(small) { display: none; }
+            
             color: $color-light;
             font-size: 3em;
             font-family: $titulo;
+            margin-right: 30px;
         }
     }
 
@@ -71,6 +99,12 @@ header.body-header {
                 width: 90px;
                 border-radius: 100px;
                 box-shadow: #000 0 0 20px 5px;
+                transition: transform 0.2s ease;
+
+                &:hover { 
+                    transform: scale(1.05);
+                    box-shadow: #000 0 0 15px 6px;
+                }
             }
         }
     }
