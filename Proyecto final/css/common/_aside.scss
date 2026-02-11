@@ -6,7 +6,8 @@ aside.main-aside {
     height: 95vh;
     position: sticky;
     top: 20px;
-    right: 0;
+    right: -100%;
+    
     transition: all 0.4s ease;
 
     @include respond-to(small_medium) {
@@ -64,7 +65,7 @@ aside.main-aside {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
 
         li {
             position: relative;
@@ -77,7 +78,6 @@ aside.main-aside {
             a, p {
                 background-color: $color-light;
                 color: $color-dark;
-                transition: all 0.2s ease;
                 font-size: 1.5em;
                 font-weight: bold;
                 text-decoration: none;
@@ -90,6 +90,7 @@ aside.main-aside {
                 border: 3px solid $color-dark;
                 box-shadow: $color-dark 4px 4px 0;
                 border-radius: 10px;
+                transition: all 0.2s ease;
             }
 
             p { cursor: default; }

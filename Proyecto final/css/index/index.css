@@ -84,7 +84,7 @@ html {
 section.feed article {
   background: linear-gradient(#163161 0, rgba(16, 36, 71, 0.5568627451) 300px, rgba(16, 36, 71, 0.5568627451));
   padding: 20px;
-  border: 5px solid #163161;
+  border: 5px solid #f5f5ff;
   box-shadow: #163161 5px 5px;
   border-radius: 60px;
   display: flex;
@@ -125,6 +125,7 @@ section.feed article header.article-header .article-header-user {
 }
 section.feed article header.article-header .article-header-user img {
   width: 90px;
+  border: 3px solid #f5f5ff;
   border-radius: 100px;
   box-shadow: #000 0 0 20px 5px;
 }
@@ -175,7 +176,7 @@ section.feed article section.article-body {
   gap: 30px;
   flex-direction: column;
   background-color: var(--article-color);
-  border: 5px solid #163161;
+  border: 5px solid #f5f5ff;
   box-shadow: #163161 5px 5px;
   border-radius: 40px;
   color: #f5f5ff;
@@ -385,7 +386,7 @@ header.body-header a.btn-index {
 header.body-header a.btn-index:hover {
   transform: scale(1.05);
   box-shadow: #163161 5px 5px;
-  animation: animarFondo 1s linear infinite;
+  animation: animarFondo 0.7s linear infinite;
 }
 header.body-header a.btn-index img {
   padding: 10px;
@@ -435,6 +436,7 @@ header.body-header .user a img {
   margin-top: 3px;
   margin-right: 5px;
   width: 90px;
+  border: 3px solid #f5f5ff;
   border-radius: 100px;
   box-shadow: #000 0 0 20px 5px;
   transition: transform 0.2s ease;
@@ -496,7 +498,7 @@ aside.main-aside {
   height: 95vh;
   position: sticky;
   top: 20px;
-  right: 0;
+  right: -100%;
   transition: all 0.4s ease;
   background: linear-gradient(to bottom, rgba(110, 40, 143, 0.9098039216), rgba(255, 255, 255, 0.3843137255) 150px, rgba(255, 255, 255, 0.3843137255) calc(100% - 150px), rgba(110, 40, 143, 0.9098039216));
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
@@ -534,7 +536,7 @@ aside.main-aside ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 aside.main-aside ul li {
   position: relative;
@@ -554,7 +556,6 @@ aside.main-aside ul li:nth-child(4n+4) {
 aside.main-aside ul li a, aside.main-aside ul li p {
   background-color: #f5f5ff;
   color: #163161;
-  transition: all 0.2s ease;
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
@@ -567,6 +568,7 @@ aside.main-aside ul li a, aside.main-aside ul li p {
   border: 3px solid #163161;
   box-shadow: #163161 4px 4px 0;
   border-radius: 10px;
+  transition: all 0.2s ease;
 }
 aside.main-aside ul li p {
   cursor: default;

@@ -7,7 +7,7 @@
 }
 
 html {
-  background: url(../../img/fondo.jpg);
+  background: url(../../img/fondo4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,6 +29,8 @@ html body {
 }
 html body header {
   background: linear-gradient(160deg, rgba(16, 36, 71, 0.5568627451), rgba(182, 30, 76, 0.7254901961), rgba(182, 30, 76, 0.7254901961), rgba(16, 36, 71, 0.5568627451));
+  border: 3px solid #f5f5ff;
+  box-shadow: #163161 4px 4px;
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -55,10 +57,13 @@ html body h2 {
   font-size: 1.5em;
   margin: 20px;
   text-align: center;
-  color: #163161;
+  color: #f5f5ff;
+  text-shadow: #163161 3px 3px;
 }
 html body main {
   background: linear-gradient(to bottom, rgba(16, 36, 71, 0.5568627451), rgba(110, 40, 143, 0.9098039216), rgba(110, 40, 143, 0.9098039216), rgba(16, 36, 71, 0.5568627451));
+  border: 3px solid #f5f5ff;
+  box-shadow: #163161 4px 4px;
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -173,9 +178,92 @@ html body main form button:hover {
   box-shadow: #163161 5px 5px;
   transform: scale(0.98);
 }
-html body main hr {
-  border: 2px solid #163161;
+html body main form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+html body main form .form-group label {
+  margin: 0 20px 5px;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+  text-align: left;
+}
+html body main form .form-group-genero p {
+  margin: 0 20px 5px;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+  text-align: left;
+  flex-basis: 100%;
+}
+html body main form .form-group-genero .btns-genero {
+  display: flex;
+  justify-content: space-between;
+}
+html body main form .form-group-genero .btns-genero .form-genero {
+  width: 27%;
+  margin: 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main form .form-group-genero .btns-genero .form-genero:nth-of-type(1) {
+  --btn-color: #3d73d3;
+}
+html body main form .form-group-genero .btns-genero .form-genero:nth-of-type(2) {
+  --btn-color: #9c66cf;
+}
+html body main form .form-group-genero .btns-genero .form-genero:nth-of-type(3) {
+  --btn-color: #cc2a5a;
+}
+html body main form .form-group-genero .btns-genero .form-genero input[type=radio] {
+  box-shadow: none;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+html body main form .form-group-genero .btns-genero .form-genero label {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
   border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f5f5ff;
+  border: 3px solid #163161;
+  color: #163161;
+  box-shadow: #163161 3px 3px;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+}
+html body main form .form-group-genero .btns-genero .form-genero label:hover {
+  background-color: #ff9147;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+  box-shadow: #163161 5px 5px;
+  transform: scale(0.98);
+}
+html body main form .form-group-genero .btns-genero .form-genero label:hover {
+  background-color: var(--btn-color);
+}
+html body main form .form-group-genero .btns-genero .form-genero label:active {
+  background-color: #ff9147;
+}
+html body main form .form-group-genero .btns-genero .form-genero input[type=radio]:checked + label {
+  background-color: #ff9147;
+  color: #f5f5ff;
+  text-shadow: #163161 2px 2px;
+}
+html body main hr {
+  border: 2px solid #f5f5ff;
+  border-radius: 10px;
+  box-shadow: #163161 3px 3px;
 }
 html body main .registrarse {
   flex: 1;
