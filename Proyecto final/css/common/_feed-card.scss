@@ -141,23 +141,6 @@ section.feed article {
             border: 5px solid $color-dark;
             box-shadow: $color-dark 5px 5px;
 
-            img {
-                @include respond-to(small) {
-                    float: none;
-                    display: block;
-                    margin: 30px auto 30px;
-                }
-
-                float: left;
-                width: 200px;
-                height: 200px;
-                aspect-ratio: 1 / 1;
-                object-fit: cover;
-                border: 5px solid $color-dark;
-                border-radius: 20px;
-                margin: 30px;
-            }
-
             p { 
                 font-size: 1.5em; 
                 font-weight: bold;
