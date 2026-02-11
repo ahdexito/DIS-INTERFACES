@@ -252,13 +252,13 @@ section.feed article {
             background-position: left center;
 
             &:hover {
+                background-position: right center;
                 cursor: pointer;
                 background-color: $color-dark;
                 color: $color-light;
                 border: 3px solid $color-light;
                 transform: scale(1.1);
                 box-shadow: $color-dark 5px 5px;
-                background-position: right center;
                 text-shadow: $color-dark 3px 3px;
             }
         }
